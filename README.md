@@ -1,2 +1,2 @@
 # Fpga-Theremin
-Theremin made with an FPGA board and UC/OS2 and NIOS
+Theremin made with an FPGA board, UC/OS2 and NIOS
