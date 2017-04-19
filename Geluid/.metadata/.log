@@ -1,0 +1,1483 @@
+!SESSION 2017-04-19 10:17:56.834 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 10:19:01.865
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-19 10:22:35.241
+!MESSAGE Indexed 'Geluid_bsp' (112 sources, 189 headers) in 6,02 sec: 8.415 declarations; 23.652 references; 18 unresolved inclusions; 2 syntax errors; 137 unresolved names (0,43%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-19 10:22:37.538
+!MESSAGE Indexed 'Geluid' (1 sources, 21 headers) in 0,12 sec: 990 declarations; 1.625 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (0,08%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:24:25.741
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:24:28.575
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 10:28:34.582 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 10:28:39.770
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 10:28:51.754
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:29:34.928
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:29:37.684
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:31:04.480
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:31:07.125
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:40:21.603
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:40:22.712
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:40:25.607
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:42:51.895
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:42:52.880
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:42:55.727
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:47:23.130
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:47:26.070
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 10:47:31.144
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=1, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 10:47:31.160
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:55:20.959
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:55:23.792
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:59:19.639
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 10:59:22.443
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:35:35.457
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:35:41.448
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:35:41.464
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:39:29.127
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:39:31.900
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:39:37.423
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:39:37.423
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:41:01.291
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:41:04.149
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:42:31.944
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:42:34.799
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:44:35.393
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:44:38.222
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:47:15.813
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:47:18.768
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:47:24.234
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:47:24.234
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:48:33.091
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:48:35.936
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 11:53:40.690 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 11:53:45.623
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 11:54:02.630
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:55:30.789
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:55:33.612
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:55:39.235
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:55:39.250
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:56:46.641
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:56:49.920
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:56:55.493
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 11:56:55.493
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:58:28.733
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:58:31.571
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:59:44.857
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:59:45.820
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 11:59:48.546
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 12:01:18.086 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 12:01:22.676
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 12:01:36.590
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:02:47.213
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:02:49.244
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:04:20.229
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:04:20.870
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:04:22.948
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:04:26.654
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=1, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:04:26.654
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:06:05.702
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:06:07.762
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:07:38.253
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:07:38.925
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:07:45.765
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 12:14:06.515 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 12:14:08.291
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 12:14:13.235
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:15:13.352
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:15:15.352
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:15:19.067
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:15:19.067
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:15:33.359
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:15:35.359
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:16:05.496
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:16:07.559
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12925d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12925d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@612531a3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@612531a3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a83cfbc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a83cfbc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b9fc5c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b9fc5c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23d07ad3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23d07ad3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b30ff23,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b30ff23,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4fea23d6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4fea23d6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ace6611,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ace6611,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 12:18:50.210
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7a689979,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7a689979,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:19:58.336
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:20:00.351
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:30:41.118
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:30:41.960
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:30:43.945
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:33:02.178
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:33:02.846
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:33:06.872
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:33:45.547
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:33:46.375
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:33:48.375
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 12:35:46.471 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 12:35:48.188
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 12:35:54.832
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:36:32.408
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:36:34.283
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 12:36:54.126 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 12:37:00.010
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:37:48.288
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:37:50.371
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:37:54.093
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:37:54.093
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:38:07.556
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:38:09.649
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:38:29.835
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:38:31.882
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:40:30.595
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:40:32.697
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 12:41:46.562 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 12:41:52.765
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:42:47.057
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:42:49.088
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:42:52.815
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 12:42:52.815
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:43:05.596
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:43:09.656
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:43:32.537
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:43:34.568
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:51:13.235
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:51:13.845
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:51:18.240
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:52:57.563
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:52:58.138
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 12:53:00.013
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:01:27.642
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:01:28.233
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:01:30.190
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:02:32.563
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:02:33.160
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:02:35.104
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:04:18.670
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:04:19.273
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 13:04:26.119
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-04-19 13:22:19.012
+!MESSAGE Error disposing widget for : org.eclipse.e4.ui.model.application.ui.menu.impl.MenuImpl null
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:4405)
+	at org.eclipse.swt.custom.CTabFolderRenderer.computeSize(CTabFolderRenderer.java:341)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.computeSize(CTabRendering.java:167)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2733)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3672)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3609)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2012)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:286)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.sendResize(Control.java:2951)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:978)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1027)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3105)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3101)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3168)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:319)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:264)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:307)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:174)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1291)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:982)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1027)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3105)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3101)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:201)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1291)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1701)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4686)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:80)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5491)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4699)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1461)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3144)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1021)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3105)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3101)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3168)
+	at org.eclipse.swt.custom.StackLayout.layout(StackLayout.java:120)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1291)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1701)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4686)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:80)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5491)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4699)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1461)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3144)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1021)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3105)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3101)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3168)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:319)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:264)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:307)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:174)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1291)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1701)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4686)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:80)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5491)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4699)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1461)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3144)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1021)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3105)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3101)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:201)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1291)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1701)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4686)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:80)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5491)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4699)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:951)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:917)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:1128)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1705)
+	at org.eclipse.swt.widgets.Canvas.WM_SIZE(Canvas.java:463)
+	at org.eclipse.swt.widgets.Decorations.WM_SIZE(Decorations.java:1811)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4686)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5491)
+	at org.eclipse.swt.widgets.Canvas.WM_WINDOWPOSCHANGED(Canvas.java:469)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4699)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.SetMenu(Native Method)
+	at org.eclipse.swt.widgets.Decorations.setMenuBar(Decorations.java:1175)
+	at org.eclipse.swt.widgets.Menu.releaseParent(Menu.java:1187)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:820)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:450)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:163)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:899)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:828)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:823)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:808)
+	at org.eclipse.ui.internal.WorkbenchWindow$1.handleEvent(WorkbenchWindow.java:301)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:248)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:140)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer$1.widgetDisposed(SWTPartRenderer.java:128)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:812)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:450)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:448)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:715)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3809)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:295)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3290)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4706)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:334)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:114)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openOkCancelConfirm(MessageDialogWithToggle.java:209)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:218)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.handleEvent(IDEWorkbenchAdvisor.java:170)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4344)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3303)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4706)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-04-19 13:22:19.044
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:4405)
+	at org.eclipse.swt.custom.CTabFolderRenderer.computeSize(CTabFolderRenderer.java:341)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.computeSize(CTabRendering.java:167)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2733)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3672)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3609)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2012)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:286)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.WM_SIZE(Control.java:5256)
+	at org.eclipse.swt.widgets.Scrollable.WM_SIZE(Scrollable.java:317)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1690)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4686)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:80)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5491)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4699)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1461)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3144)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1021)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3105)
+	at org.eclipse.swt.widgets.Control.setSize(Control.java:3642)
+	at org.eclipse.swt.widgets.Control.setSize(Control.java:3666)
+	at org.eclipse.swt.widgets.Control.pack(Control.java:2130)
+	at org.eclipse.swt.widgets.Control.pack(Control.java:2104)
+	at org.eclipse.ui.internal.e4.compatibility.ActionBars.updateActionBars(ActionBars.java:95)
+	at org.eclipse.ui.part.PageBookView.showPageRec(PageBookView.java:1035)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.showPageRec(ContentOutline.java:251)
+	at org.eclipse.ui.part.PageBookView.partHidden(PageBookView.java:1111)
+	at org.eclipse.ui.part.PageBookView$4.partHidden(PageBookView.java:1071)
+	at org.eclipse.ui.internal.WorkbenchPage$25.run(WorkbenchPage.java:5004)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartHidden(WorkbenchPage.java:5002)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart$1.handleEvent(CompatibilityPart.java:100)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:248)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:140)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer$1.widgetDisposed(SWTPartRenderer.java:128)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:812)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:166)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:790)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1290)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:450)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:448)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:715)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3809)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:295)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3290)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4706)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:334)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:114)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openOkCancelConfirm(MessageDialogWithToggle.java:209)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:218)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.handleEvent(IDEWorkbenchAdvisor.java:170)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4344)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3303)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4706)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+
+!ENTRY org.eclipse.equinox.event 4 0 2017-04-19 13:22:19.075
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/ui/UIElement/widget/SET] to handler org.eclipse.e4.ui.services.internal.events.UIEventHandler@1770fbec
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.NavigationHistory.getDisplay(NavigationHistory.java:168)
+	at org.eclipse.ui.internal.NavigationHistory.markEditor(NavigationHistory.java:185)
+	at org.eclipse.ui.internal.WorkbenchPage.updateActiveEditorSources(WorkbenchPage.java:367)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartClosed(WorkbenchPage.java:4907)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart$1.handleEvent(CompatibilityPart.java:101)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:248)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:140)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer$1.widgetDisposed(SWTPartRenderer.java:128)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:812)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:875)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:166)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:790)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1290)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:450)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:448)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:715)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3809)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:295)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3290)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4706)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:334)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:114)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openOkCancelConfirm(MessageDialogWithToggle.java:209)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:218)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.handleEvent(IDEWorkbenchAdvisor.java:170)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4344)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3303)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4706)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4990)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+!SESSION 2017-04-19 13:50:27.134 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 13:50:29.150
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 13:50:39.030
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:01:22.864
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:01:24.760
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:04:10.948
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:04:11.510
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:04:13.423
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:05:49.227
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:05:49.948
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:05:51.818
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:10:57.126
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:10:57.856
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:10:59.738
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:12:12.328
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:12:12.918
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:12:18.652
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:13:31.180
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:13:31.834
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:13:37.635
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:15:11.920
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:15:12.639
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:15:14.506
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:17:30.556
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:17:31.180
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:17:35.809
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:18:44.221
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:18:44.783
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:18:46.684
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:20:24.732
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:20:25.456
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:20:27.321
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:20:55.589
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:20:56.174
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:21:00.351
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:22:01.958
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:22:02.548
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:22:06.175
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:23:07.245
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:23:07.815
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:23:09.640
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:24:05.060
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:24:05.659
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:24:10.034
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:26:39.178
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:26:39.825
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:26:46.677
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:27:25.762
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:27:26.360
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:27:28.231
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:27:50.990
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:27:51.585
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:27:53.463
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:29:07.889
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:29:08.479
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:29:10.342
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:29:40.719
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:29:41.287
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:29:43.170
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:30:20.920
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:30:21.497
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:30:23.394
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:30:49.845
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:30:50.421
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:30:52.295
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:31:24.564
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:31:25.134
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:31:27.052
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:08.240
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:08.973
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:10.781
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 14:34:14.277
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 14:34:14.282
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:31.275
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:37.066
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:45.324
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:34:47.170
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 14:35:26.307 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 14:35:27.447
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 14:35:33.560
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:35:47.767
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:35:49.595
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 14:36:53.373 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 14:36:54.467
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 14:37:00.467
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:37:48.277
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:37:50.348
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 14:37:54.046
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 14:37:54.046
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:38:09.382
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:38:15.522
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:38:32.997
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:38:35.028
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:41:19.698
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:41:20.307
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:41:26.569
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
