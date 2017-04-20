@@ -1,6 +1,6 @@
-14:41:13 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+14:42:42 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
 make all 
 [BSP build complete]
 
-14:41:14 Build Finished (took 704ms)
+14:42:45 Build Finished (took 2s.226ms)
 

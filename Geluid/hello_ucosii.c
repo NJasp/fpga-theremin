@@ -1,243 +1,156 @@
-#include <stdio.h>
-#include "includes.h"
-#include "altera_up_avalon_character_lcd.h"
 #include "altera_up_avalon_parallel_port.h"
-#include "altera_up_avalon_video_pixel_buffer_dma.h"    // "VGA_Subsystem_VGA_Pixel_DMA"#include "altera_up_avalon_video_dma_controller.h"		// "VGA_Subsystem_Char_Buf_Subsystem_Char_Buf_DMA"#include "string.h"#include <os/alt_sem.h>
 #include "altera_up_avalon_audio.h"
+#include "sys/alt_stdio.h"
 
-/* Definition of Task Stacks */
-#define   TASK_STACKSIZE       2048
-OS_STK task1_stk[TASK_STACKSIZE];
-OS_STK task2_stk[TASK_STACKSIZE];
-OS_STK task3_stk[TASK_STACKSIZE];
-OS_STK task4_stk[TASK_STACKSIZE];
+/* globals */
+#define BUF_SIZE 500000			// about 10 seconds of buffer (@ 48K samples/sec)
+#define BUF_THRESHOLD 96		// 75% of 128 word buffer
 
-/* Definition of Task Priorities */
+/* function prototypes */
+void check_KEYs( int *, int *, int *, alt_up_parallel_port_dev *, alt_up_audio_dev * );
 
-#define TASK1_PRIORITY      10
-#define TASK2_PRIORITY      11
-#define TASK3_PRIORITY      12
-#define TASK4_PRIORITY      9
+/********************************************************************************
+ * This program demonstrates use of HAL functions
+ *
+ * It performs the following:
+ *  	1. records audio for about 10 seconds when KEY[1] is pressed. LEDG[0] is
+ *  	   lit while recording
+ * 	2. plays the recorded audio when KEY[2] is pressed. LEDG[1] is lit while
+ * 	   playing
+********************************************************************************/
+int main(void)
+{
+	/* declare variables to point to devices that are opened */
+	alt_up_parallel_port_dev *KEY_dev;
+	alt_up_parallel_port_dev *green_LEDs_dev;
+	alt_up_audio_dev *audio_dev;
 
-ALT_SEM(sem)
-
-/*variables - devices*/
-alt_up_pixel_buffer_dma_dev* vgapixel;				//pixel buffer device
-alt_up_video_dma_dev* vgachar;						//char buffer device
-alt_up_parallel_port_dev *audio;
-alt_up_character_lcd_dev *lcd_dev;
-alt_up_parallel_port_dev *red_LEDs_dev;
-alt_up_parallel_port_dev *green_LEDs_dev;
-alt_up_parallel_port_dev *slider_switches_dev;
-alt_up_parallel_port_dev *hex3_hex0_dev, *hex7_hex4_dev;
-
-/* create a message to be displayed on the VGA and LCD displays */
-char text_top_row[40] = "-Jan Verhoeven-\0";
-char text_bottom_row[40];
-
-void task1(void* pdata) {
-	int count = 0;
-	int x = 20, y = 20, w = 100;
-	int c = 0x001F;
-
-	while (1) {
-		ALT_SEM_PEND(sem, 0);
-
-		sprintf(text_bottom_row, "%d", count++);
-
-		alt_up_character_lcd_set_cursor_pos(lcd_dev, 0, 1); // set LCD cursor location to bottom row
-		alt_up_character_lcd_string(lcd_dev, text_bottom_row);
-
-		alt_up_video_dma_draw_string(vgachar, text_bottom_row, 10, 12, 0);
-
-		alt_up_pixel_buffer_dma_draw_box(vgapixel, x, y, x + w, y + w, c, 0);
-
-		x++;
-		y++;
-		if (x > 120)
-			x = y = 20;
-
-		OSTimeDlyHMSM(0, 0, 0, 500);
-		ALT_SEM_POST(sem);
-
-		OSTimeDlyHMSM(0, 0, 1, 0);
-	}
-}
-
-void task2(void* pdata) {
-	int toggle = 0;
-	while (1) {
-		ALT_SEM_PEND(sem, 0);
-
-		if (toggle == 0) {
-			strcpy(text_bottom_row, "Task2");
-			toggle = 1;
-		} else {
-			strcpy(text_bottom_row, "     ");
-			toggle = 0;
-		}
-
-		alt_up_character_lcd_set_cursor_pos(lcd_dev, 5, 1); // set LCD cursor location to bottom row
-		alt_up_character_lcd_string(lcd_dev, text_bottom_row);
-
-		OSTimeDlyHMSM(0, 0, 0, 500);
-		ALT_SEM_POST(sem);
-		OSTimeDlyHMSM(0, 0, 1, 0);
-	}
-}
-
-void task3(void* pdata) {
-	int sw_values, hex_values;
-
-	while (1) {
-		sw_values = alt_up_parallel_port_read_data(slider_switches_dev);
-
-		sw_values &= 0x000000FF;
-		hex_values = sw_values | sw_values << 8 | sw_values << 16
-				| sw_values << 24;
-
-		alt_up_parallel_port_write_data(hex3_hex0_dev, hex_values);
-
-		OSTimeDlyHMSM(0, 0, 0, 100);
-	}
-}
-
-void task4(void* pdata) {
-	unsigned int countR = 1;
-	unsigned int countG = 1 << 8;
-	int toggle = 1;
-
-	while (1) {
-		alt_up_parallel_port_write_data(red_LEDs_dev, countR);
-		alt_up_parallel_port_write_data(green_LEDs_dev, countG);
-
-		OSTimeDlyHMSM(0, 0, 0, 100);
-
-		alt_up_parallel_port_write_data(red_LEDs_dev, 0x000000);
-		alt_up_parallel_port_write_data(green_LEDs_dev, 0x000000);
-
-		if (countR < 1 << 17)
-			countR = countR << 1;
-		else
-			countR = 1;
-
-		if (toggle) {
-			if (countG == 1)
-				countG = countG << 8;
-			else
-				countG = countG >> 1;
-		}
-		toggle = !toggle;
-	}
-}
-
-/* The main function creates two task and starts multi-tasking */
-int main(void) {
-	OSInit();
-
-	int err = ALT_SEM_CREATE(&sem, 1);
-	if (err != 0)
-		printf("Semaphore NOT created\n");
-
-	vgapixel = alt_up_pixel_buffer_dma_open_dev(
-			"/dev/VGA_Subsystem_VGA_Pixel_DMA");		//open pixel buffer
-	if (vgapixel == NULL) {
-		printf("Error: could not open VGA_Pixel_Buffer device\n");
+	// open the pushbutton KEY parallel port
+	KEY_dev = alt_up_parallel_port_open_dev ("/dev/Pushbuttons");
+	if (KEY_dev == NULL)
+	{
+		alt_printf ("Error: could not open pushbutton KEY device\n");
 		return -1;
-	} else
-		printf("Opened VGA_Pixel_Buffer device\n");
-
-	alt_up_pixel_buffer_dma_clear_screen(vgapixel, 0);			//clear screen
-
-	vgachar = alt_up_video_dma_open_dev(
-			"/dev/VGA_Subsystem_Char_Buf_Subsystem_Char_Buf_DMA");//open char buffer
-	if (vgachar == NULL) {
-		printf("Error: could not open VGA_Char_Buffer device\n");
+	}
+	else
+		alt_printf ("Opened pushbutton KEY device\n");
+	// open the green LEDs parallel port
+	green_LEDs_dev = alt_up_parallel_port_open_dev ("/dev/Green_LEDs");
+	if (green_LEDs_dev == NULL)
+	{
+		alt_printf ("Error: could not open green LEDs device\n");
 		return -1;
-	} else
-		printf("Opened VGA_Char_Buffer device\n");
-
-	alt_up_video_dma_screen_clear(vgachar, 0);					//clear buffer
-
-	alt_up_video_dma_draw_string(vgachar, text_top_row, 10, 10, 0);
-
-	/* output text message to the LCD */
-	ALT_SEM_PEND(sem, 0);
-
-	lcd_dev = alt_up_character_lcd_open_dev("/dev/Char_LCD_16x2");
-	if (lcd_dev == NULL) {
-		printf("Error: could not open character LCD device\n");
+	}
+	else
+		alt_printf ("Opened green LEDs device\n");
+	audio_dev = alt_up_audio_open_dev ("/dev/Audio_Subsystem_Audio");
+	if ( audio_dev == NULL)
+	{
+		alt_printf ("Error: could not open audio device\n");
 		return -1;
-	} else
-		printf("Opened character LCD device\n");
-
-	alt_up_character_lcd_set_cursor_pos(lcd_dev, 0, 0); // set LCD cursor location to top row
-	alt_up_character_lcd_string(lcd_dev, text_top_row);
-	alt_up_character_lcd_set_cursor_pos(lcd_dev, 0, 1); // set LCD cursor location to bottom row
-	alt_up_character_lcd_string(lcd_dev, text_bottom_row);
-	alt_up_character_lcd_cursor_off(lcd_dev); // turn off the LCD cursor
-	ALT_SEM_POST(sem);
-
-	red_LEDs_dev = alt_up_parallel_port_open_dev("/dev/Red_LEDs");
-	green_LEDs_dev = alt_up_parallel_port_open_dev("/dev/Green_LEDs");
-	slider_switches_dev = alt_up_parallel_port_open_dev("/dev/Slider_Switches");
-
-	hex3_hex0_dev = alt_up_parallel_port_open_dev("/dev/HEX3_HEX0");
-	hex7_hex4_dev = alt_up_parallel_port_open_dev("/dev/HEX7_HEX4");
-
-	OSTaskCreateExt(task1, NULL, (void *) &task1_stk[TASK_STACKSIZE - 1],
-	TASK1_PRIORITY, TASK1_PRIORITY, task1_stk, TASK_STACKSIZE, NULL, 0);
-
-	OSTaskCreateExt(task2, NULL, (void *) &task2_stk[TASK_STACKSIZE - 1],
-	TASK2_PRIORITY, TASK2_PRIORITY, task2_stk, TASK_STACKSIZE, NULL, 0);
-
-	OSTaskCreateExt(task3, NULL, (void *) &task3_stk[TASK_STACKSIZE - 1],
-	TASK3_PRIORITY, TASK3_PRIORITY, task3_stk, TASK_STACKSIZE, NULL, 0);
-
-	OSTaskCreateExt(task4, NULL, (void *) &task4_stk[TASK_STACKSIZE - 1],
-	TASK4_PRIORITY, TASK4_PRIORITY, task4_stk, TASK_STACKSIZE, NULL, 0);
-
-	alt_up_audio_dev * audio_dev;
+	}
+	else
+		alt_printf ("Opened audio device\n");
 
 	/* used for audio record/playback */
-	unsigned int l_buf = 100000;
-	unsigned int r_buf = 100000;
-
-	// open the Audio port
-	audio_dev = alt_up_audio_open_dev("/dev/Audio_Subsystem_Audio");
-
-	if (audio_dev == NULL) {
-		alt_printf("Error: could not open audio device \n");
-	}
-	else {
-		alt_printf("Opened audio device \n");
-	}
-
+	int record = 0, play = 0, buffer_index = 0;
+	unsigned int l_buf[BUF_SIZE];
+	unsigned int r_buf[BUF_SIZE];
+	int num_read; int num_written;
+	int len = 2682358;
+	int counter = 0;
+	static signed char *ptr = "";
+	static signed char *ptr2 = "";
+	static signed char * test_snd = "";
+	static signed char * test_snd2 = "";
 	/* read and echo audio data */
-	while (1) {
-		int fifospace = alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_RIGHT);
-		if (fifospace > 0) {
-			// read audio buffer
-			alt_up_audio_read_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
-			alt_up_audio_read_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+	record = 0;
+	play = 0;
+	while(1)
+	{
+		check_KEYs ( &record, &play, &buffer_index, KEY_dev, audio_dev );
+		if (record)
+		{
+			alt_up_parallel_port_write_data(green_LEDs_dev, 0x1); // set LEDG[0] on
 
-			// read audio from microphone
-			//alt_up_audio_record_l(audio_dev, &(l_buf), 10);
-			//alt_up_audio_record_r(audio_dev, &(r_buf), 10);
+			// record data until the buffer is full
+			if (buffer_index < BUF_SIZE)
+			{
 
-			printf("%d", r_buf);
+				unsigned int n = alt_up_audio_write_fifo_space(audio_dev, ALT_UP_AUDIO_RIGHT);
 
-			// write audio to main speakers
-			alt_up_audio_play_l(audio_dev, &(l_buf), 10);
-			alt_up_audio_play_r(audio_dev, &(r_buf), 10);
+				for (unsigned int i = 0; i < n; i++) {
+					r_buf[buffer_index] = 0x800000 + ((int)*ptr++) << 9;
 
-			// write audio buffer
-			alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
-			alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+					if (ptr > test_snd + len) {
+						ptr = test_snd;
+					}
+				}
+
+				for (unsigned int i = 0; i < n; i++) {
+					l_buf[buffer_index] = 0x800000 + ((int)*ptr2++) << 9;
+
+					if (ptr2 > test_snd2 + len) {
+						ptr2 = test_snd;
+					}
+				}
+
+					// done recording
+					printf("Done making number");
+					record = 0;
+					alt_up_parallel_port_write_data(green_LEDs_dev, 0x0); // set LEDG off
+			}
+		}
+		else if (play)
+		{
+			alt_up_parallel_port_write_data(green_LEDs_dev, 0x2); // set LEDG[1] on
+
+			// output data until the buffer is empty
+			if (buffer_index < BUF_SIZE)
+			{
+				num_written = alt_up_audio_play_r (audio_dev, &(r_buf[buffer_index]), BUF_SIZE - buffer_index);
+				/* assume that we can write the same # words to the left and right */
+				(void) alt_up_audio_play_l (audio_dev, &(l_buf[buffer_index]), num_written);
+				buffer_index += num_written;
+
+				if (buffer_index == BUF_SIZE)
+				{
+					// done playback
+					play = 0;
+					alt_up_parallel_port_write_data(green_LEDs_dev, 0x0); // set LEDG off
+				}
+			}
 		}
 	}
-
-	OSStart();
-	return 0;
 }
 
+/****************************************************************************************
+ * Subroutine to read KEYs
+****************************************************************************************/
+void check_KEYs(int *KEY1, int *KEY2, int *counter, alt_up_parallel_port_dev *KEY_dev,
+					 alt_up_audio_dev *audio_dev)
+{
+	int KEY_value;
+
+	KEY_value = alt_up_parallel_port_read_data (KEY_dev); // read the pushbutton KEY values
+	while (alt_up_parallel_port_read_data (KEY_dev));		// wait for pushbutton KEY release
+
+	if (KEY_value == 0x2)					// check KEY1
+	{
+		// reset counter to start recording
+		*counter = 0;
+		// reset audio port
+		alt_up_audio_reset_audio_core (audio_dev);
+
+		*KEY1 = 1;
+	}
+	else if (KEY_value == 0x4)				// check KEY2
+	{
+		// reset counter to start playback
+		*counter = 0;
+		// reset audio port
+		alt_up_audio_reset_audio_core (audio_dev);
+
+		*KEY2 = 1;
+	}
+}

@@ -1,9 +1,9 @@
-14:41:18 **** Incremental Build of configuration Nios II for project Geluid ****
+14:42:52 **** Incremental Build of configuration Nios II for project Geluid ****
 make all 
 Info: Building C:/Users/Martijn/Geluid_bsp/
 D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
 [BSP build complete]
 [Geluid build complete]
 
-14:41:19 Build Finished (took 828ms)
+14:42:54 Build Finished (took 2s.932ms)
 

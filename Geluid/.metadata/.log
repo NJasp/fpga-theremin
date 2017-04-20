@@ -1481,3 +1481,607 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:41:26.569
 !MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:50:33.701
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:50:34.373
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:50:39.262
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:52:37.183
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:52:37.980
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:52:40.065
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:53:32.664
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:53:33.321
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:53:38.022
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:54:05.187
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:54:05.875
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:54:09.873
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:56:11.115
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:56:11.753
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:56:18.579
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:57:08.776
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:57:09.479
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:57:16.321
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:57:56.489
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:57:57.629
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:58:04.489
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:59:16.706
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:59:17.394
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 14:59:22.201
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:00:16.236
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:00:16.892
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:00:20.793
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:03:09.926
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:03:13.301
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:03:20.160
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:06:29.249
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:06:29.905
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:06:34.780
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:07:25.522
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:07:26.304
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:07:28.382
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:08:08.250
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:08:10.957
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:08:17.833
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:08:52.567
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:08:53.396
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:08:55.792
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:09:36.139
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:09:37.529
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:09:44.405
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:10:23.375
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:10:24.047
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:10:30.495
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:11:41.922
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:11:42.578
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:11:46.126
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:12:11.631
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:12:12.303
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:12:15.801
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:13:28.722
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:13:29.315
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:13:33.605
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:15:10.668
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:15:11.271
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:15:15.503
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:16:33.529
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:16:34.241
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:16:36.103
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:17:00.973
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:17:07.645
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:17:14.492
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:18:59.449
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:19:01.335
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:19:08.150
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:26:32.671
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 15:26:37.843
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 15:26:37.849
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:27:36.995
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:27:37.704
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:27:39.581
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:28:31.504
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:28:33.356
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:30:05.444
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:30:06.024
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:30:07.852
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:34:49.834
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:34:50.388
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:34:52.195
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:11.629
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:12.325
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:14.210
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 15:37:17.569
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 15:37:17.573
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:28.500
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:31.849
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:43.929
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:37:45.828
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:38:05.176
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:38:05.756
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:38:07.633
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:43:03.216
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:43:03.888
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:43:05.933
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 15:44:21.925 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 15:44:23.019
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 15:44:29.618
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:45:18.504
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:45:20.379
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 15:45:23.217
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10002020, --id=0x0, --timestamp=1482343707, /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2017-04-19 15:45:23.223
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:45:35.715
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:45:37.594
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:45:55.290
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:45:57.159
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:47:05.575
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:47:06.164
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:47:08.061
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-19 15:50:51.119 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-19 15:50:52.187
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 15:50:58.310
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:52:24.975
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:52:27.007
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:52:41.825
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-19 15:52:43.840
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-20 10:07:13.617 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-20 10:07:20.560
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-20 10:07:48.946
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-04-20 12:24:51.651 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-20 12:24:53.433
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-20 12:24:59.776
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:41:08.944
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:41:11.723
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:42:34.444
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:42:35.404
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:42:37.997
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:43:28.568
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:43:29.516
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:43:32.182
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:44:36.394
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:44:37.351
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:44:40.029
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:45:32.156
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:45:33.091
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:45:35.769
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:48:24.032
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:48:24.970
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:48:27.616
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:49:36.148
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:49:37.057
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:49:39.787
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:50:39.818
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:50:40.751
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:50:43.459
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:51:39.367
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:51:40.293
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:51:42.974
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:54:15.176
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:54:16.101
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 12:54:18.803
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:01:06.155
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:01:07.098
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:01:09.762
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:47:35.850
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:47:36.800
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:47:39.482
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:49:50.942
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:49:51.899
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:49:54.560
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:50:43.986
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:50:44.842
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 13:50:47.182
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+!SESSION 2017-04-20 14:13:47.256 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-20 14:13:50.875
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-20 14:14:08.567
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Martijn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:16:14.749
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:16:17.498
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:19:19.680
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:19:26.699
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:19:33.628
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:20:53.990
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:20:54.969
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:21:00.173
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:42:55.203
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:42:56.782
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10002020 --id=0x0 --timestamp=1482343707]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-04-20 14:43:00.150
+!MESSAGE Executing: [D:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10002020 --id=0x0 --timestamp=1482343707 /cygdrive/c/Users/Martijn/EclipseProjecten/Geluid.elf]
