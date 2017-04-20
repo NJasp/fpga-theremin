@@ -1,9 +1,10 @@
 #include "altera_up_avalon_parallel_port.h"
 #include "altera_up_avalon_audio.h"
 #include "sys/alt_stdio.h"
+#include <stdint.h>
 
 /* globals */
-#define BUF_SIZE 500000			// about 10 seconds of buffer (@ 48K samples/sec)
+#define BUF_SIZE 50000			// about 10 seconds of buffer (@ 48K samples/sec)
 #define BUF_THRESHOLD 96		// 75% of 128 word buffer
 
 /* function prototypes */
@@ -58,11 +59,10 @@ int main(void)
 	unsigned int r_buf[BUF_SIZE];
 	int num_read; int num_written;
 	int len = 2682358;
-	int counter = 0;
-	static signed char *ptr = "";
-	static signed char *ptr2 = "";
-	static signed char * test_snd = "";
-	static signed char * test_snd2 = "";
+	float frequency = 618.0f;
+	float sampling_ratio = 50000.0f;
+	float amplitude = 0.5f;
+	float t;
 	/* read and echo audio data */
 	record = 0;
 	play = 0;
@@ -77,22 +77,15 @@ int main(void)
 			if (buffer_index < BUF_SIZE)
 			{
 
-				unsigned int n = alt_up_audio_write_fifo_space(audio_dev, ALT_UP_AUDIO_RIGHT);
+				for (buffer_index = 0; buffer_index < BUF_SIZE; buffer_index++)
+				{
+				    float theta = ((float)buffer_index / sampling_ratio) * 3.14159265359;
+				    l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
 
-				for (unsigned int i = 0; i < n; i++) {
-					r_buf[buffer_index] = 0x800000 + ((int)*ptr++) << 9;
+				    float theta2 = ((float)buffer_index / sampling_ratio) * 3.14159265359;
+				    r_buf[buffer_index] = (int16_t)(sin(theta2 * frequency) * 32767.0f * amplitude);
 
-					if (ptr > test_snd + len) {
-						ptr = test_snd;
-					}
-				}
-
-				for (unsigned int i = 0; i < n; i++) {
-					l_buf[buffer_index] = 0x800000 + ((int)*ptr2++) << 9;
-
-					if (ptr2 > test_snd2 + len) {
-						ptr2 = test_snd;
-					}
+				    buffer_index++;
 				}
 
 					// done recording

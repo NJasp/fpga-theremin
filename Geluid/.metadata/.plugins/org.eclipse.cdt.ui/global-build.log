@@ -9903,3 +9903,333 @@ Info: Building C:/Users/Martijn/Geluid_bsp/
 D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
 [BSP build complete]
 [Geluid build complete]
+15:01:48 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:82:31: error: 'i' undeclared (first use in this function)
+         float theta = ((float)i / sampling_ratio) * 3.14159265359;
+                               ^
+hello_ucosii.c:82:31: note: each undeclared identifier is reported only once for each function it appears in
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:85:15: error: redefinition of 'theta'
+         float theta = ((float)i / sampling_ratio) * 3.14159265359;
+               ^
+hello_ucosii.c:82:15: note: previous definition of 'theta' was here
+         float theta = ((float)i / sampling_ratio) * 3.14159265359;
+               ^
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+make: *** [obj/default/hello_ucosii.o] Error 1
+15:01:51 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:01:59 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:82:31: error: 'i' undeclared (first use in this function)
+         float theta = ((float)i / sampling_ratio) * 3.14159265359;
+                               ^
+hello_ucosii.c:82:31: note: each undeclared identifier is reported only once for each function it appears in
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:85:15: error: redefinition of 'theta'
+         float theta = ((float)i / sampling_ratio) * 3.14159265359;
+               ^
+hello_ucosii.c:82:15: note: previous definition of 'theta' was here
+         float theta = ((float)i / sampling_ratio) * 3.14159265359;
+               ^
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+make: *** [obj/default/hello_ucosii.o] Error 1
+15:02:43 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:85:15: error: redefinition of 'theta'
+         float theta = ((float)buffer_index / sampling_ratio) * 3.14159265359;
+               ^
+hello_ucosii.c:82:15: note: previous definition of 'theta' was here
+         float theta = ((float)buffer_index / sampling_ratio) * 3.14159265359;
+               ^
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+make: *** [obj/default/hello_ucosii.o] Error 1
+15:02:46 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:03:46 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+Info: Linking Geluid.elf
+nios2-elf-g++  -T'C:/Users/Martijn/Geluid_bsp//linker.x' -msys-crt0='C:/Users/Martijn/Geluid_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -LC:/Users/Martijn/Geluid_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=Geluid.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o Geluid.elf obj/default/hello_ucosii.o -lm -msys-lib=m
+nios2-elf-insert Geluid.elf --thread_model ucosii --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x10002020 --timestamp 1482343707 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name nios_system --quartus_project_dir "d:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog" --jdi D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/DE2_115_Media_Computer.jdi --sopcinfo D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/nios_system.sopcinfo
+Info: (Geluid.elf) 135 KBytes program size (code + initialized data).
+Info:              65392 KBytes free for stack + heap.
+Info: Creating Geluid.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Geluid.elf >Geluid.objdump
+[Geluid build complete]
+15:03:52 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:04:07 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+[Geluid build complete]
+15:06:14 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+Info: Linking Geluid.elf
+nios2-elf-g++  -T'C:/Users/Martijn/Geluid_bsp//linker.x' -msys-crt0='C:/Users/Martijn/Geluid_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -LC:/Users/Martijn/Geluid_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=Geluid.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o Geluid.elf obj/default/hello_ucosii.o -lm -msys-lib=m
+nios2-elf-insert Geluid.elf --thread_model ucosii --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x10002020 --timestamp 1482343707 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name nios_system --quartus_project_dir "d:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog" --jdi D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/DE2_115_Media_Computer.jdi --sopcinfo D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/nios_system.sopcinfo
+Info: (Geluid.elf) 135 KBytes program size (code + initialized data).
+Info:              65392 KBytes free for stack + heap.
+Info: Creating Geluid.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Geluid.elf >Geluid.objdump
+[Geluid build complete]
+15:06:20 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:06:51 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+Info: Linking Geluid.elf
+nios2-elf-g++  -T'C:/Users/Martijn/Geluid_bsp//linker.x' -msys-crt0='C:/Users/Martijn/Geluid_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -LC:/Users/Martijn/Geluid_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=Geluid.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o Geluid.elf obj/default/hello_ucosii.o -lm -msys-lib=m
+nios2-elf-insert Geluid.elf --thread_model ucosii --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x10002020 --timestamp 1482343707 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name nios_system --quartus_project_dir "d:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog" --jdi D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/DE2_115_Media_Computer.jdi --sopcinfo D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/nios_system.sopcinfo
+Info: (Geluid.elf) 135 KBytes program size (code + initialized data).
+Info:              65392 KBytes free for stack + heap.
+Info: Creating Geluid.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Geluid.elf >Geluid.objdump
+[Geluid build complete]
+15:06:56 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:07:05 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+[Geluid build complete]
+15:08:52 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+Info: Linking Geluid.elf
+nios2-elf-g++  -T'C:/Users/Martijn/Geluid_bsp//linker.x' -msys-crt0='C:/Users/Martijn/Geluid_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -LC:/Users/Martijn/Geluid_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=Geluid.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o Geluid.elf obj/default/hello_ucosii.o -lm -msys-lib=m
+nios2-elf-insert Geluid.elf --thread_model ucosii --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x10002020 --timestamp 1482343707 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name nios_system --quartus_project_dir "d:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog" --jdi D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/DE2_115_Media_Computer.jdi --sopcinfo D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/nios_system.sopcinfo
+Info: (Geluid.elf) 135 KBytes program size (code + initialized data).
+Info:              65392 KBytes free for stack + heap.
+Info: Creating Geluid.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Geluid.elf >Geluid.objdump
+[Geluid build complete]
+15:08:58 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:09:04 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+[Geluid build complete]
+15:39:26 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Martijn/Geluid_bsp//UCOSII/inc -IC:/Users/Martijn/Geluid_bsp//HAL/inc -IC:/Users/Martijn/Geluid_bsp/ -IC:/Users/Martijn/Geluid_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:83:41: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+         l_buf[buffer_index] = (int16_t)(sin(theta * frequency) * 32767.0f * amplitude);
+                                         ^
+hello_ucosii.c:83:41: warning: incompatible implicit declaration of built-in function 'sin'
+hello_ucosii.c:83:41: note: include '<math.h>' or provide a declaration of 'sin'
+hello_ucosii.c:92:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("Done making number");
+      ^
+hello_ucosii.c:92:6: warning: incompatible implicit declaration of built-in function 'printf'
+hello_ucosii.c:92:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_ucosii.c:65:8: warning: unused variable 't' [-Wunused-variable]
+  float t;
+        ^
+hello_ucosii.c:61:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 2682358;
+      ^
+hello_ucosii.c:60:6: warning: unused variable 'num_read' [-Wunused-variable]
+  int num_read; int num_written;
+      ^
+Info: Linking Geluid.elf
+nios2-elf-g++  -T'C:/Users/Martijn/Geluid_bsp//linker.x' -msys-crt0='C:/Users/Martijn/Geluid_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -LC:/Users/Martijn/Geluid_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=Geluid.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o Geluid.elf obj/default/hello_ucosii.o -lm -msys-lib=m
+nios2-elf-insert Geluid.elf --thread_model ucosii --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x10002020 --timestamp 1482343707 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name nios_system --quartus_project_dir "d:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog" --jdi D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/DE2_115_Media_Computer.jdi --sopcinfo D:/intelFPGA_lite/16.1/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/nios_system.sopcinfo
+Info: (Geluid.elf) 135 KBytes program size (code + initialized data).
+Info:              65392 KBytes free for stack + heap.
+Info: Creating Geluid.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Geluid.elf >Geluid.objdump
+[Geluid build complete]
+15:39:32 **** Incremental Build of configuration Nios II for project Geluid_bsp ****
+make all 
+[BSP build complete]
+15:40:09 **** Incremental Build of configuration Nios II for project Geluid ****
+make all 
+Info: Building C:/Users/Martijn/Geluid_bsp/
+D:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/Martijn/Geluid_bsp/
+[BSP build complete]
+[Geluid build complete]
