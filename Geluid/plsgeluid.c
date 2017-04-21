@@ -37,8 +37,10 @@ void taskSound(void* pdata) {
 }
 
 void taskFreq(void *pdata) {
-	OSTimeDlyHMSM(0, 0, 0, 100);
-	printf("incremented frequencymodifier: %d", ++freq);
+	for(;;) {
+		OSTimeDlyHMSM(0, 0, 0, 100);
+		printf("incremented frequencymodifier: %d", ++freq);
+	}
 }
 
 /* The main function creates two task and starts multi-tasking */
