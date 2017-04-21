@@ -13,29 +13,24 @@ int freq = 1;
 
 #define TASK1_PRIORITY      1
 #define TASK2_PRIORITY      2
-#define AMP_VAL				100
+#define AMP_VAL				1000
 
 alt_up_audio_dev *audio_dev;
 
 void taskSound(void* pdata) {
-    int buf[62];
+    unsigned int buf;
     double i = 0;
-    int c = 0;
 
-    while(i<2*M_PI) {
-        buf[c] = (int) sin(i*freq)*AMP_VAL;
-        i+=.1;
-        c++;
+    for(;;) {
+		while(i<2*M_PI) {
+			buf = (int) sin(i*freq)*AMP_VAL;
+			alt_up_audio_play_l(audio_dev, &(buf), 1);
+			alt_up_audio_play_r(audio_dev, &(buf), 1);
+			i+=.1;
+		}
+
+		OSTimeDlyHMSM(0, 0, 0, 5);
     }
-	// write audio to main speakers
-	alt_up_audio_play_l(audio_dev, &(buf), 10);
-	alt_up_audio_play_r(audio_dev, &(buf), 10);
-
-	// write audio buffer
-	alt_up_audio_write_fifo(audio_dev, &(buf), 1, ALT_UP_AUDIO_RIGHT);
-	alt_up_audio_write_fifo(audio_dev, &(buf), 1, ALT_UP_AUDIO_LEFT);
-
-	OSTimeDlyHMSM(0, 0, 0, 5);
 }
 /* Prints "Hello World" and sleeps for three seconds */
 void task2(void* pdata) {
