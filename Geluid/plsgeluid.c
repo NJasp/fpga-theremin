@@ -24,8 +24,10 @@ void taskSound(void* pdata) {
     for(;;) {
 		while(i<2*M_PI) {
 			buf = (int) sin(i*freq)*AMP_VAL;
-			alt_up_audio_play_l(audio_dev, &(buf), 1);
-			alt_up_audio_play_r(audio_dev, &(buf), 1);
+			alt_up_audio_play_l(audio_dev, &buf, 10);
+			alt_up_audio_play_r(audio_dev, &buf, 10);
+			alt_up_audio_write_fifo(audio_dev, &buf, 1, ALT_UP_AUDIO_RIGHT);
+			alt_up_audio_write_fifo(audio_dev, &buf, 1, ALT_UP_AUDIO_LEFT);
 			i+=.1;
 		}
 
@@ -43,13 +45,12 @@ void task2(void* pdata) {
 /* The main function creates two task and starts multi-tasking */
 int main(void) {
 	audio_dev = alt_up_audio_open_dev ("/dev/Audio_Subsystem_Audio");
-	if ( audio_dev == NULL)
-	{
-		alt_printf ("Error: could not open audio device\n");
+	if ( audio_dev == NULL) {
+		printf ("Error: could not open audio device\n");
 		return -1;
 	}
 	else
-		alt_printf ("Opened audio device\n");
+		printf ("Opened audio device\n");
 
   OSTaskCreateExt(taskSound, NULL, (void *)&taskSound_stk[TASK_STACKSIZE-1],
                   TASK1_PRIORITY, TASK1_PRIORITY, taskSound_stk, TASK_STACKSIZE, NULL, 0);
