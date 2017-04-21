@@ -17,7 +17,7 @@ int freq = 1;
 alt_up_audio_dev *audio_dev;
 
 void taskSound(void* pdata) {
-    int buf;
+    unsigned int buf;
     double i = 0;
 
     for(;;) {
@@ -26,10 +26,8 @@ void taskSound(void* pdata) {
 		while(i<2*M_PI) {
 			buf = (int) sin(i*freq)*AMP_VAL;
 			i+=.1;
-            alt_up_audio_write_fifo(audio_dev, &buf, --words, ALT_UP_AUDIO_RIGHT);
-            alt_up_audio_write_fifo(audio_dev, &buf, words, ALT_UP_AUDIO_LEFT);
-            alt_up_audio_play_r(audio_dev, &buf, words);
-            alt_up_audio_play_l(audio_dev, &buf, words);
+            printf("words written right:\t%d", alt_up_audio_write_fifo(audio_dev, &buf, words, ALT_UP_AUDIO_RIGHT));
+            printf("words written left:\t%d", alt_up_audio_write_fifo(audio_dev, &buf, words, ALT_UP_AUDIO_LEFT));
 		}
         
 		OSTimeDlyHMSM(0, 0, 0, 5);
@@ -39,7 +37,7 @@ void taskSound(void* pdata) {
 void taskFreq(void *pdata) {
 	for(;;) {
 		OSTimeDlyHMSM(0, 0, 0, 100);
-		printf("incremented frequencymodifier: %d", ++freq);
+		printf("incremented frequencymodifier: %d\n", ++freq);
 	}
 }
 
