@@ -42,21 +42,21 @@ architecture behaviour of Geluid is
 			AUD_DACDAT : out std_logic);
 		END COMPONENT;
 		
-signal	audio_in_available : std_logic;
-signal	left_channel_audio_in : signed(31 downto 0);
-signal	right_channel_audio_in : signed(31 downto 0);
-signal	read_audio_in : std_logic;
+        signal	audio_in_available : std_logic;
+        signal	left_channel_audio_in : signed(31 downto 0);
+        signal	right_channel_audio_in : signed(31 downto 0);
+        signal	read_audio_in : std_logic;
 
-signal	audio_out_allowed : std_logic;
-signal	left_channel_audio_out : signed(31 downto 0);
-signal 	right_channel_audio_out : signed(31 downto 0);
-signal 	write_audio_out : std_logic;
-signal 	sound : signed(31 downto 0);
-signal delay_cnt, delay : signed(18 downto 0);
-signal snd : std_logic := '0';
-signal counter : signed(31 downto 0);
-		
-begin
+        signal	audio_out_allowed : std_logic;
+        signal	left_channel_audio_out : signed(31 downto 0);
+        signal 	right_channel_audio_out : signed(31 downto 0);
+        signal 	write_audio_out : std_logic;
+        signal 	sound : signed(31 downto 0);
+        signal delay_cnt, delay : signed(18 downto 0);
+        signal snd : std_logic := '0';
+        signal counter : signed(31 downto 0);
+                
+        begin
 		process(CLOCK_50) 
 			begin	
 				if rising_edge(CLOCK_50) then
@@ -72,43 +72,21 @@ begin
 		end process; 
 		
 		
-		delay <= "1000000000000000000" when key(0) = '0' else
-					"0000000000010000000" when key(1) = '0' else
-					"0000000000000000001" when key(2) = '0';
-		--sound <= "00000000100110001001011010000000";
+		delay <= to_signed(262144, delay'length) when key(0) = '0' else
+					to_signed(128, delay'length) when key(1) = '0' else
+					to_signed(1, delay'length) when key(2) = '0';
 		
 		sound <= counter when snd = '1' else
 					not counter when snd = '0';
-		
-		read_audio_in <= audio_in_available and audio_out_allowed;
-		--left_channel_audio_out	<= left_channel_audio_in + sound;
-		--right_channel_audio_out	<= right_channel_audio_in + sound;
+
 		left_channel_audio_out	<= sound;
 		right_channel_audio_out	<= sound;
 		write_audio_out <= audio_in_available and audio_out_allowed;
 		
 		LEDR <= SW;
 		
-		AudioController1 : Audio_Controller port map (
-		CLOCK_50,
-		SW(0),
-		'0',
-		read_audio_in,
-		'0',
-		left_channel_audio_out,
-		right_channel_audio_out,
-		write_audio_out,
-		AUD_ADCDAT,
-		AUD_BCLK,
-		AUD_ADCLRCK,
-		AUD_DACLRCK,
-		audio_in_available,
-		left_channel_audio_in,
-		right_channel_audio_in,
-		audio_out_allowed,
-		AUD_XCK,
-		AUD_DACDAT
-		);
-		
-		end behaviour;
+		AudioController1 : Audio_Controller port map ( CLOCK_50, SW(0), '0', read_audio_in, '0',
+		left_channel_audio_out, right_channel_audio_out, write_audio_out, AUD_ADCDAT, AUD_BCLK, AUD_ADCLRCK, AUD_DACLRCK, 
+		audio_in_available, left_channel_audio_in, right_channel_audio_in, audio_out_allowed, AUD_XCK, AUD_DACDAT);
+end behaviour;
 
