@@ -43,7 +43,7 @@ module Audio_Controller(
  *                           Parameter Declarations                          *
  *****************************************************************************/
 
-localparam AUDIO_DATA_WIDTH	= 32;
+localparam AUDIO_DATA_WIDTH	= 14;
 localparam BIT_COUNTER_INIT	= 5'd31;
 
 /*****************************************************************************

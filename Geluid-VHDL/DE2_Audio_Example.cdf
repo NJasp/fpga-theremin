@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/Martijn/Downloads/Audio_Demo (2)/Audio_Demo/") File("DE2_Audio_Example.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/Martijn/Documents/fpga-theremin/fpga-theremin/Geluid-VHDL/") File("DE2_Audio_Example.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
