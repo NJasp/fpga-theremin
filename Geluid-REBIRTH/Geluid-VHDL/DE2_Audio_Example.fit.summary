@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May  3 14:21:32 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : DE2_Audio_Example
+Top-level Entity Name : DE2_Audio_Example
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 735 / 114,480 ( < 1 % )
+    Total combinational functions : 732 / 114,480 ( < 1 % )
+    Dedicated logic registers : 150 / 114,480 ( < 1 % )
+Total registers : 150
+Total pins : 50 / 529 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 3,584 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

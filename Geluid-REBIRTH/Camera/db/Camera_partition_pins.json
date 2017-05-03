@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "D5M_XCLKIN",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_PIXLCLK",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_RESET_N",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_FVAL",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_LVAL",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[7]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[8]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[9]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[10]",
+					"strict" : false
+				},
+				{
+					"name" : "D5M_D[11]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

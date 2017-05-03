@@ -1,0 +1,132 @@
+#include <stdio.h>
+#include "includes.h"
+#include "altera_up_avalon_character_lcd.h"
+#include "altera_up_avalon_parallel_port.h"
+#include "altera_up_avalon_video_pixel_buffer_dma.h"    // "VGA_Subsystem_VGA_Pixel_DMA"#include "altera_up_avalon_video_dma_controller.h"		// "VGA_Subsystem_Char_Buf_Subsystem_Char_Buf_DMA"#include "string.h"#include <os/alt_sem.h>#include "altera_up_avalon_audio.h"#include "altera_up_avalon_audio_and_video_config.h"
+#define   TASK_STACKSIZE       2048
+OS_STK task1_stk[TASK_STACKSIZE];
+OS_STK task2_stk[TASK_STACKSIZE];
+OS_STK task3_stk[TASK_STACKSIZE];
+OS_STK task4_stk[TASK_STACKSIZE];
+
+/* Definition of Task Priorities */
+
+#define TASK1_PRIORITY      10
+#define TASK2_PRIORITY      11
+#define TASK3_PRIORITY      12
+#define TASK4_PRIORITY      9
+
+ALT_SEM( sem);
+
+/*variables - devices*/
+alt_up_pixel_buffer_dma_dev* vgapixel;				//pixel buffer device
+alt_up_video_dma_dev* vgachar;						//char buffer device
+alt_up_parallel_port_dev *audio;
+alt_up_character_lcd_dev *lcd_dev;
+alt_up_parallel_port_dev *red_LEDs_dev;
+alt_up_parallel_port_dev *green_LEDs_dev;
+alt_up_parallel_port_dev *slider_switches_dev;
+alt_up_parallel_port_dev *hex3_hex0_dev, *hex7_hex4_dev;
+
+/* create a message to be displayed on the VGA and LCD displays */
+char text_top_row[40] = "-Jan Verhoeven-\0";
+char text_bottom_row[40];
+
+/* The main function creates two task and starts multi-tasking */
+int main(void) {
+	OSInit();
+
+	int err = ALT_SEM_CREATE(&sem, 1);
+	if (err != 0)
+		printf("Semaphore NOT created\n");
+
+	vgapixel = alt_up_pixel_buffer_dma_open_dev(
+			"/dev/VGA_Subsystem_VGA_Pixel_DMA");		//open pixel buffer
+	if (vgapixel == NULL) {
+		printf("Error: could not open VGA_Pixel_Buffer device\n");
+		return -1;
+	} else
+		printf("Opened VGA_Pixel_Buffer device\n");
+
+	alt_up_pixel_buffer_dma_clear_screen(vgapixel, 0);			//clear screen
+
+	vgachar = alt_up_video_dma_open_dev(
+			"/dev/VGA_Subsystem_Char_Buf_Subsystem_Char_Buf_DMA");//open char buffer
+	if (vgachar == NULL) {
+		printf("Error: could not open VGA_Char_Buffer device\n");
+		return -1;
+	} else
+		printf("Opened VGA_Char_Buffer device\n");
+
+	alt_up_video_dma_screen_clear(vgachar, 0);					//clear buffer
+
+	alt_up_video_dma_draw_string(vgachar, text_top_row, 10, 10, 0);
+
+	/* output text message to the LCD */
+	ALT_SEM_PEND(sem, 0);
+
+	lcd_dev = alt_up_character_lcd_open_dev("/dev/Char_LCD_16x2");
+	if (lcd_dev == NULL) {
+		printf("Error: could not open character LCD device\n");
+		return -1;
+	} else
+		printf("Opened character LCD device\n");
+
+	alt_up_character_lcd_set_cursor_pos(lcd_dev, 0, 0); // set LCD cursor location to top row
+	alt_up_character_lcd_string(lcd_dev, text_top_row);
+	alt_up_character_lcd_set_cursor_pos(lcd_dev, 0, 1); // set LCD cursor location to bottom row
+	alt_up_character_lcd_string(lcd_dev, text_bottom_row);
+	alt_up_character_lcd_cursor_off(lcd_dev); // turn off the LCD cursor
+	ALT_SEM_POST(sem);
+
+	red_LEDs_dev = alt_up_parallel_port_open_dev("/dev/Red_LEDs");
+	green_LEDs_dev = alt_up_parallel_port_open_dev("/dev/Green_LEDs");
+	slider_switches_dev = alt_up_parallel_port_open_dev("/dev/Slider_Switches");
+
+	hex3_hex0_dev = alt_up_parallel_port_open_dev("/dev/HEX3_HEX0");
+	hex7_hex4_dev = alt_up_parallel_port_open_dev("/dev/HEX7_HEX4");
+
+	// open the Audio port
+	alt_up_audio_dev *audio_dev = alt_up_audio_open_dev("dev/Audio_Subsystem_Audio");
+
+	static signed char * test_snd = "";
+
+	if (audio_dev == NULL) {
+		printf("Error: could not open audio device \n");
+	}
+	else {
+		printf("Opened audio device \n");
+	}
+
+	alt_up_audio_reset_audio_core(audio_dev);
+	alt_up_audio_disable_write_interrupt(audio_dev);
+	alt_up_audio_disable_read_interrupt(audio_dev);
+
+	//alt_irq_register(AUDIO_0_IRQ, (void *) audio_dev, audio_isr);
+	alt_up_audio_enable_write_interrupt(audio_dev);
+
+	while (1) {
+		{
+			int len = 2682358;
+			static signed char *ptr = test_snd;
+			unsigned int x[128];
+
+			unsigned int n = alt_up_audio_write_fifo_space(audio_dev,ALT_UP_AUDIO_RIGHT);
+
+			for (unsigned int i = 0; i < n; i++) {
+				x[i] = 0x800000 + ((int) *ptr++) << 9;
+
+				if (ptr > test_snd + len) {
+					ptr = test_snd;
+					printf("Done\n");
+				}
+			}
+
+			alt_up_audio_write_fifo(audio_dev, x, n, ALT_UP_AUDIO_RIGHT);
+			alt_up_audio_write_fifo(audio_dev, x, n, ALT_UP_AUDIO_LEFT);
+
+		}
+
+		OSStart();
+		return 0;
+	}
