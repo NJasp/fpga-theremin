@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity DE2_Audio_Example is
+port (
+  CLOCK_50, CLOCK_27 : in std_logic;
+  KEY : in std_logic_vector(3 downto 0);
+  AUD_ADCDAT : in std_logic;
+  AUD_BCLK : inout std_logic;
+  AUD_ADCLRCK : inout std_logic;
+  AUD_DACLRCK : inout std_logic;
+  I2C_SDAT : inout std_logic;
+  AUD_XCK : out std_logic;
+  AUD_DACDAT : out std_logic;
+  I2C_SCLK : out std_logic;
+  LEDR : out std_logic_vector(17 downto 0);
+  SW : in std_logic_vector(17 downto 0)
+);
+end DE2_Audio_Example;
