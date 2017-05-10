@@ -4,10 +4,9 @@
 #include <unistd.h> /* for sleep() */
 
 #define PI 3.14159265358979323846264338327950288
-#define FREQUENCY 440
-#define SAMPLE_RATE 48000
-#define BUF_SIZE SAMPLE_RATE
-#define VOLUME 100000000
+#define SAMPLE_RATE 200000
+#define BUF_SIZE 2000
+#define VOLUME 90000000
 
 #define BUF_THRESHOLD 96		// 75% of 128 word buffer
 
@@ -39,6 +38,7 @@ int main(void)
 	int fifospace, leftdata, rightdata;
 	int record = 0, play = 0;
 	int buffer_index = 0;
+	int FREQUENCY = 2000;
 	float left_buffer[BUF_SIZE];
 	float right_buffer[BUF_SIZE];
 
@@ -50,23 +50,27 @@ int main(void)
 
 	while(1)
 	{
-		check_KEYs ( &record, &play, &buffer_index );
-		if (record)
-		{
-			*(green_LED_ptr) = 0x1;					// turn on LEDG[0]
+		*(green_LED_ptr) = 0x1;					// turn on LEDG[0]
 			fifospace = *(audio_ptr + 1);	 		// read the audio port fifospace register
 			if ( (fifospace & 0x000000FF) > BUF_THRESHOLD ) 	// check RARC
 			{
 				// store data until the the audio-in FIFO is empty or the buffer is full
-				while ( (fifospace & 0x000000FF) && (buffer_index < BUF_SIZE) )
+				while ((fifospace & 0x000000FF) && (buffer_index < BUF_SIZE) || (fifospace & 0x00FF0000) && (buffer_index < BUF_SIZE))
 				{
 					//left_buffer[buffer_index] = *(audio_ptr + 2);
 					//right_buffer[buffer_index] = *(audio_ptr + 3);
 					//++buffer_index;
 
+						//for (int i = 0; i < 2; i++) {
+
 					    t = (double)buffer_index/(double)SAMPLE_RATE;
-					    left_buffer[buffer_index] = (sin(2 * PI * FREQUENCY * t)) * VOLUME;
-					    right_buffer[buffer_index] = (sin(2 * PI * FREQUENCY * t)) * VOLUME;
+					    	for (int x = 0; x < 15; x++) {
+					    		left_buffer[buffer_index] = (sin(2 * PI * FREQUENCY * t)) * VOLUME;
+					    		right_buffer[buffer_index] = (sin(2 * PI * FREQUENCY * t)) * VOLUME;
+
+					    		buffer_index++;
+					    	}
+						//}
 
 					  //left_buffer[buffer_index] = 1000000000 * sin(2 * M_PI * frequency * );
 					  //right_buffer[buffer_index] = sin((((2 * M_PI) * (frequency / sampling_frequency))) * buffer_index) * 10000000000;
@@ -74,40 +78,15 @@ int main(void)
 
 					  printf("%d\n",buffer_index);
 
-					  buffer_index++;
-
-					if (buffer_index == BUF_SIZE)
-					{
-						// done recording
-						record = 0;
-						*(green_LED_ptr) = 0x0;				// turn off LEDG
-					}
-					fifospace = *(audio_ptr + 1);	// read the audio port fifospace register
+					//fifospace = *(audio_ptr + 1);	// read the audio port fifospace register
 				}
-			}
-		}
-		else if (play)
-		{
-			*(green_LED_ptr) = 0x2;					// turn on LEDG_1
-			fifospace = *(audio_ptr + 1);	 		// read the audio port fifospace register
-			if ( (fifospace & 0x00FF0000) > BUF_THRESHOLD ) 	// check WSRC
-			{
-				// output data until the buffer is empty or the audio-out FIFO is full
-				while ( (fifospace & 0x00FF0000) && (buffer_index < BUF_SIZE) )
-				{
-					*(audio_ptr + 2) = left_buffer[buffer_index];
-					*(audio_ptr + 3) = right_buffer[buffer_index];
-					++buffer_index;
-
-					if (buffer_index == BUF_SIZE)
-					{
-						// done playback
-						play = 0;
-						*(green_LED_ptr) = 0x0;				// turn off LEDG
+				//buffer_index = 0; //hier kom ik nooit
+				while(1) {
+					for (int y = 0; y < buffer_index; y++) {
+						*(audio_ptr + 2) = left_buffer[y];
+						*(audio_ptr + 3) = right_buffer[y];
 					}
-					fifospace = *(audio_ptr + 1);	// read the audio port fifospace register
 				}
-			}
 		}
 	}
 }
