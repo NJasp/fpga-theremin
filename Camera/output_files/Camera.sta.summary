@@ -4,14 +4,14 @@ TimeQuest Timing Analyzer Summary
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D5M_PIXLCLK'
 Slack : -3.000
-TNS   : -18.420
+TNS   : -37.695
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D5M_PIXLCLK'
 Slack : -3.000
-TNS   : -18.420
+TNS   : -37.695
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D5M_PIXLCLK'
 Slack : -3.000
-TNS   : -16.212
+TNS   : -32.900
 
 ------------------------------------------------------------

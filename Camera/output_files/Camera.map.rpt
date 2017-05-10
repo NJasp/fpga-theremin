@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Camera
-Tue Apr 18 14:16:41 2017
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed May 10 15:04:01 2017
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
 ---------------------
@@ -13,28 +13,35 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
+devices manufactured by Altera and sold by Altera or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
@@ -43,16 +50,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 18 14:16:41 2017       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed May 10 15:04:01 2017       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; Camera                                      ;
 ; Top-level Entity Name              ; Camera                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 13                                          ;
-;     Total combinational functions  ; 1                                           ;
-;     Dedicated logic registers      ; 12                                          ;
-; Total registers                    ; 12                                          ;
-; Total pins                         ; 34                                          ;
+; Total logic elements               ; 799                                         ;
+;     Total combinational functions  ; 786                                         ;
+;     Dedicated logic registers      ; 27                                          ;
+; Total registers                    ; 27                                          ;
+; Total pins                         ; 64                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -74,7 +81,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -143,74 +150,127 @@ agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                    ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; Camera.vhd                       ; yes             ; User VHDL File  ; D:/intelFPGA_lite/16.1/Camera/Camera.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; Camera.vhd                       ; yes             ; User VHDL File               ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd                 ;         ;
+; decoder.vhd                      ; yes             ; User VHDL File               ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/decoder.vhd                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /opt/altera/16.0/quartus/libraries/megafunctions/lpm_divide.tdf                                              ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; /opt/altera/16.0/quartus/libraries/megafunctions/abs_divider.inc                                             ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /opt/altera/16.0/quartus/libraries/megafunctions/sign_div_unsign.inc                                         ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                 ; /opt/altera/16.0/quartus/libraries/megafunctions/aglobal160.inc                                              ;         ;
+; db/lpm_divide_gcm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_gcm.tdf      ;         ;
+; db/sign_div_unsign_5nh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_5nh.tdf ;         ;
+; db/alt_u_div_u9f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_u9f.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/add_sub_8pc.tdf         ;         ;
+; db/lpm_divide_uim.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_uim.tdf      ;         ;
+; db/sign_div_unsign_mlh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_mlh.tdf ;         ;
+; db/alt_u_div_07f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_07f.tdf       ;         ;
+; db/lpm_divide_1jm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_1jm.tdf      ;         ;
+; db/sign_div_unsign_plh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_plh.tdf ;         ;
+; db/alt_u_div_67f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_67f.tdf       ;         ;
+; db/lpm_divide_bkm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_bkm.tdf      ;         ;
+; db/sign_div_unsign_3nh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_3nh.tdf ;         ;
+; db/alt_u_div_q9f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_q9f.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 13          ;
-;                                             ;             ;
-; Total combinational functions               ; 1           ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 0           ;
-;     -- <=2 input functions                  ; 1           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1           ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 12          ;
-;     -- Dedicated logic registers            ; 12          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 34          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; process_0~0 ;
-; Maximum fan-out                             ; 12          ;
-; Total fan-out                               ; 98          ;
-; Average fan-out                             ; 1.20        ;
-+---------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                                ;
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                        ;
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 799                                                                                                                          ;
+;                                             ;                                                                                                                              ;
+; Total combinational functions               ; 786                                                                                                                          ;
+; Logic element usage by number of LUT inputs ;                                                                                                                              ;
+;     -- 4 input functions                    ; 194                                                                                                                          ;
+;     -- 3 input functions                    ; 212                                                                                                                          ;
+;     -- <=2 input functions                  ; 380                                                                                                                          ;
+;                                             ;                                                                                                                              ;
+; Logic elements by mode                      ;                                                                                                                              ;
+;     -- normal mode                          ; 561                                                                                                                          ;
+;     -- arithmetic mode                      ; 225                                                                                                                          ;
+;                                             ;                                                                                                                              ;
+; Total registers                             ; 27                                                                                                                           ;
+;     -- Dedicated logic registers            ; 27                                                                                                                           ;
+;     -- I/O registers                        ; 0                                                                                                                            ;
+;                                             ;                                                                                                                              ;
+; I/O pins                                    ; 64                                                                                                                           ;
+;                                             ;                                                                                                                              ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                                                                            ;
+;                                             ;                                                                                                                              ;
+; Maximum fan-out node                        ; lpm_divide:Mod1|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_u9f:divider|add_sub_11_result_int[12]~20 ;
+; Maximum fan-out                             ; 33                                                                                                                           ;
+; Total fan-out                               ; 2291                                                                                                                         ;
+; Average fan-out                             ; 2.43                                                                                                                         ;
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Camera                    ; 1 (1)               ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |Camera             ; Camera      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                               ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name         ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |Camera                                ; 786 (31)          ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |Camera                                                                                                 ; Camera              ; work         ;
+;    |decoder:decoder0|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|decoder:decoder0                                                                                ; decoder             ; work         ;
+;    |decoder:decoder1|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|decoder:decoder1                                                                                ; decoder             ; work         ;
+;    |decoder:decoder2|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|decoder:decoder2                                                                                ; decoder             ; work         ;
+;    |decoder:decoder3|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|decoder:decoder3                                                                                ; decoder             ; work         ;
+;    |lpm_divide:Div0|                   ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_bkm:auto_generated|  ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div0|lpm_divide_bkm:auto_generated                                                   ; lpm_divide_bkm      ; work         ;
+;          |sign_div_unsign_3nh:divider| ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div0|lpm_divide_bkm:auto_generated|sign_div_unsign_3nh:divider                       ; sign_div_unsign_3nh ; work         ;
+;             |alt_u_div_q9f:divider|    ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div0|lpm_divide_bkm:auto_generated|sign_div_unsign_3nh:divider|alt_u_div_q9f:divider ; alt_u_div_q9f       ; work         ;
+;    |lpm_divide:Div1|                   ; 111 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_1jm:auto_generated|  ; 111 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div1|lpm_divide_1jm:auto_generated                                                   ; lpm_divide_1jm      ; work         ;
+;          |sign_div_unsign_plh:divider| ; 111 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div1|lpm_divide_1jm:auto_generated|sign_div_unsign_plh:divider                       ; sign_div_unsign_plh ; work         ;
+;             |alt_u_div_67f:divider|    ; 111 (111)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div1|lpm_divide_1jm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_67f:divider ; alt_u_div_67f       ; work         ;
+;    |lpm_divide:Div2|                   ; 111 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div2                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_uim:auto_generated|  ; 111 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div2|lpm_divide_uim:auto_generated                                                   ; lpm_divide_uim      ; work         ;
+;          |sign_div_unsign_mlh:divider| ; 111 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div2|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
+;             |alt_u_div_07f:divider|    ; 111 (111)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Div2|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_07f:divider ; alt_u_div_07f       ; work         ;
+;    |lpm_divide:Mod0|                   ; 90 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_gcm:auto_generated|  ; 90 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod0|lpm_divide_gcm:auto_generated                                                   ; lpm_divide_gcm      ; work         ;
+;          |sign_div_unsign_5nh:divider| ; 90 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod0|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh ; work         ;
+;             |alt_u_div_u9f:divider|    ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod0|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_u9f:divider ; alt_u_div_u9f       ; work         ;
+;    |lpm_divide:Mod1|                   ; 168 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_gcm:auto_generated|  ; 168 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod1|lpm_divide_gcm:auto_generated                                                   ; lpm_divide_gcm      ; work         ;
+;          |sign_div_unsign_5nh:divider| ; 168 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod1|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh ; work         ;
+;             |alt_u_div_u9f:divider|    ; 168 (168)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod1|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_u9f:divider ; alt_u_div_u9f       ; work         ;
+;    |lpm_divide:Mod2|                   ; 195 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod2                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_gcm:auto_generated|  ; 195 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod2|lpm_divide_gcm:auto_generated                                                   ; lpm_divide_gcm      ; work         ;
+;          |sign_div_unsign_5nh:divider| ; 195 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod2|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh ; work         ;
+;             |alt_u_div_u9f:divider|    ; 195 (195)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Camera|lpm_divide:Mod2|lpm_divide_gcm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_u9f:divider ; alt_u_div_u9f       ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; num3[3]                               ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -218,14 +278,152 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 12    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 12    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Clock Enable       ; 27    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                ;
+; LPM_WIDTHD             ; 12             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_gcm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                ;
+; LPM_WIDTHD             ; 12             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_gcm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_uim ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                ;
+; LPM_WIDTHD             ; 12             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_gcm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                ;
+; LPM_WIDTHD             ; 7              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_1jm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                ;
+; LPM_WIDTHD             ; 10             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_bkm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -233,16 +431,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 34                          ;
-; cycloneiii_ff         ; 12                          ;
+; boundary_port         ; 64                          ;
+; cycloneiii_ff         ; 27                          ;
+;     ENA               ; 15                          ;
 ;     ENA CLR           ; 12                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         2 data inputs ; 1                           ;
+; cycloneiii_lcell_comb ; 790                         ;
+;     arith             ; 225                         ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 203                         ;
+;     normal            ; 565                         ;
+;         0 data inputs ; 36                          ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 314                         ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 194                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.10                        ;
+; Max LUT depth         ; 37.00                       ;
+; Average LUT depth     ; 24.85                       ;
 +-----------------------+-----------------------------+
 
 
@@ -251,7 +457,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -260,17 +466,91 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Tue Apr 18 14:16:30 2017
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Wed May 10 15:03:45 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Camera -c Camera
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file camera.vhd
-    Info (12022): Found design unit 1: Camera-behaviour File: D:/intelFPGA_lite/16.1/Camera/Camera.vhd Line: 16
-    Info (12023): Found entity 1: Camera File: D:/intelFPGA_lite/16.1/Camera/Camera.vhd Line: 4
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file Camera.vhd
+    Info (12022): Found design unit 1: Camera-behaviour File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 19
+    Info (12023): Found entity 1: Camera File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: decoder-Behavior File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/decoder.vhd Line: 11
+    Info (12023): Found entity 1: decoder File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/decoder.vhd Line: 5
 Info (12127): Elaborating entity "Camera" for the top level hierarchy
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:decoder0" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 53
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 46
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 44
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 44
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 42
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 42
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 40
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 46
+Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 46
+    Info (12134): Parameter "LPM_WIDTHN" = "12"
+    Info (12134): Parameter "LPM_WIDTHD" = "12"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gcm.tdf
+    Info (12023): Found entity 1: lpm_divide_gcm File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_gcm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_5nh File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_5nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u9f.tdf
+    Info (12023): Found entity 1: alt_u_div_u9f File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_u9f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 44
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 44
+    Info (12134): Parameter "LPM_WIDTHN" = "12"
+    Info (12134): Parameter "LPM_WIDTHD" = "12"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div2" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 44
+Info (12133): Instantiated megafunction "lpm_divide:Div2" with the following parameter: File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 44
+    Info (12134): Parameter "LPM_WIDTHN" = "12"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_uim.tdf
+    Info (12023): Found entity 1: lpm_divide_uim File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_uim.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_mlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_mlh File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_mlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_07f.tdf
+    Info (12023): Found entity 1: alt_u_div_07f File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_07f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 42
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 42
+    Info (12134): Parameter "LPM_WIDTHN" = "12"
+    Info (12134): Parameter "LPM_WIDTHD" = "12"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 42
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 42
+    Info (12134): Parameter "LPM_WIDTHN" = "12"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1jm.tdf
+    Info (12023): Found entity 1: lpm_divide_1jm File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_1jm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_plh File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_plh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_67f.tdf
+    Info (12023): Found entity 1: alt_u_div_67f File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_67f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 40
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 40
+    Info (12134): Parameter "LPM_WIDTHN" = "12"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bkm.tdf
+    Info (12023): Found entity 1: lpm_divide_bkm File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/lpm_divide_bkm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_3nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_3nh File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/sign_div_unsign_3nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_q9f.tdf
+    Info (12023): Found entity 1: alt_u_div_q9f File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/db/alt_u_div_q9f.tdf Line: 27
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "D5M_SDATA" has no driver File: D:/intelFPGA_lite/16.1/Camera/Camera.vhd Line: 11
+    Warning (13040): bidirectional pin "D5M_SDATA" has no driver File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 27 assignments for entity "DE2_115_CAMERA" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity DE2_115_CAMERA -section_id "Root Region" was ignored
@@ -302,19 +582,20 @@ Warning (20013): Ignored 27 assignments for entity "DE2_115_CAMERA" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE2_115_CAMERA -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "D5M_STROBE" File: D:/intelFPGA_lite/16.1/Camera/Camera.vhd Line: 6
-    Warning (15610): No output dependent on input pin "D5M_SCLK" File: D:/intelFPGA_lite/16.1/Camera/Camera.vhd Line: 8
-    Warning (15610): No output dependent on input pin "D5M_TRIGGER" File: D:/intelFPGA_lite/16.1/Camera/Camera.vhd Line: 8
-Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 20 input pins
-    Info (21059): Implemented 13 output pins
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "D5M_STROBE" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 7
+    Warning (15610): No output dependent on input pin "D5M_SCLK" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 9
+    Warning (15610): No output dependent on input pin "D5M_TRIGGER" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/cat/Downloads/fpga-theremin-292bf4021d208cf3eaad20f1810e7a38d12e1691/Camera/Camera.vhd Line: 14
+Info (21057): Implemented 863 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 41 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 13 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 640 megabytes
-    Info: Processing ended: Tue Apr 18 14:16:41 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21061): Implemented 799 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 1285 megabytes
+    Info: Processing ended: Wed May 10 15:04:01 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:38
 
 
