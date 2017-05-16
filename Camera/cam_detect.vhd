@@ -4,9 +4,10 @@ use IEEE.numeric_std.all;
 
 entity cam_detect is
 	port(
-		clk, reset, ready, valid : in std_logic;
+		clk, reset : in std_logic;
+		ready, valid, startofpacket, endofpacket : in std_logic;
 		data : in std_logic_vector(23 downto 0);
-		xData, yData : out integer);
+		xData, yData : out std_logic_vector(8 downto 0));
 end entity cam_detect;
 
 architecture Behaviour of cam_detect is
@@ -18,7 +19,7 @@ begin
 		variable xCount, yCount : integer;
 			begin
 			if reset ='0' then
-				xCount := 0;
+				xCount := 0; 
 				yCount := 0;
 				blackCounter := 0;
 			elsif falling_edge(clk) then
@@ -46,8 +47,8 @@ begin
 					
 					-- if 10 or more have been found send through positions of this row
 					if blackCounter >= 10 then
-						xData <= xCount;
-						yData <= yCount;
+						xData <= std_logic_vector(to_unsigned(xCount, 9));
+						yData <= std_logic_vector(to_unsigned(yCount, 9));
 						blackCounter := 0;
 					end if;
 				end if;
