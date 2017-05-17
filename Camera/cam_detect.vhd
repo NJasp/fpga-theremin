@@ -7,7 +7,7 @@ entity cam_detect is
 		clk, reset : in std_logic;
 		valid, startofpacket, endofpacket : in std_logic;
 		data : in std_logic_vector(23 downto 0);
-		xData, yData : out std_logic_vector(15 downto 0));
+		xyData : out std_logic_vector(31 downto 0));
 end entity cam_detect;
 
 architecture Behaviour of cam_detect is
@@ -52,8 +52,7 @@ begin
 						
 						-- if 10 or more have been found send through positions of this row
 						if blackCounter >= 10 then
-							xData <= std_logic_vector(to_unsigned(xCount, 16));
-							yData <= std_logic_vector(to_unsigned(yCount, 16));
+							xyData <= std_logic_vector(to_unsigned(xCount, 16))&std_logic_vector(to_unsigned(yCount, 16));
 							blackCounter := 0;
 						end if;
 					end if;
