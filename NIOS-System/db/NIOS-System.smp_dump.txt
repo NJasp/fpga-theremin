@@ -1,0 +1,142 @@
+
+State Machine - |NIOS|nios_system:U0|nios_system_SDRAM:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_SDRAM:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_SDRAM:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_SDRAM:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_Processor2:processor2|nios_system_Processor2_cpu:cpu|nios_system_Processor2_cpu_nios2_oci:the_nios_system_Processor2_cpu_nios2_oci|nios_system_Processor2_cpu_debug_slave_wrapper:the_nios_system_Processor2_cpu_debug_slave_wrapper|nios_system_Processor2_cpu_debug_slave_tck:the_nios_system_Processor2_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_Processor1:processor1|nios_system_Processor1_cpu:cpu|nios_system_Processor1_cpu_nios2_oci:the_nios_system_Processor1_cpu_nios2_oci|nios_system_Processor1_cpu_debug_slave_wrapper:the_nios_system_Processor1_cpu_debug_slave_wrapper|nios_system_Processor1_cpu_debug_slave_tck:the_nios_system_Processor1_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_JTAG_to_FPGA_Bridge:jtag_to_fpga_bridge|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_JTAG_to_FPGA_Bridge:jtag_to_fpga_bridge|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |NIOS|nios_system:U0|nios_system_JTAG_to_FPGA_Bridge:jtag_to_fpga_bridge|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|Altera_UP_Flash_Memory_IP_Core_Avalon_Interface:flash|present_state
+Name present_state.s_ACKNOWLEDGE present_state.s_ERASE present_state.s_WRITE_NEXT_BYTE present_state.s_WRITE present_state.s_CHECK_WRITE present_state.s_READ_NEXT_BYTE present_state.s_READ present_state.s_CHECK_READ present_state.s_WAIT 
+present_state.s_WAIT 0 0 0 0 0 0 0 0 0 
+present_state.s_CHECK_READ 0 0 0 0 0 0 0 1 1 
+present_state.s_READ 0 0 0 0 0 0 1 0 1 
+present_state.s_READ_NEXT_BYTE 0 0 0 0 0 1 0 0 1 
+present_state.s_CHECK_WRITE 0 0 0 0 1 0 0 0 1 
+present_state.s_WRITE 0 0 0 1 0 0 0 0 1 
+present_state.s_WRITE_NEXT_BYTE 0 0 1 0 0 0 0 0 1 
+present_state.s_ERASE 0 1 0 0 0 0 0 0 1 
+present_state.s_ACKNOWLEDGE 1 0 0 0 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|Altera_UP_Flash_Memory_IP_Core_Avalon_Interface:flash|Altera_UP_Flash_Memory_UP_Core_Standalone:flash_mem_interface|Altera_UP_Flash_Memory_Controller:fm|present_state
+Name present_state.s_ACKNOWLEDGE present_state.s_WRITE present_state.s_READ present_state.s_WAIT_COMMAND present_state.s_RESET 
+present_state.s_RESET 0 0 0 0 0 
+present_state.s_WAIT_COMMAND 0 0 0 1 1 
+present_state.s_READ 0 0 1 0 1 
+present_state.s_WRITE 0 1 0 0 1 
+present_state.s_ACKNOWLEDGE 1 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|Altera_UP_Flash_Memory_IP_Core_Avalon_Interface:flash|Altera_UP_Flash_Memory_UP_Core_Standalone:flash_mem_interface|Altera_UP_Flash_Memory_User_Interface:ui|present_state
+Name present_state.s_ACKNOWLEDGE present_state.s_CHECK_ERASE_DONE present_state.s_ERASE_WAIT_COMPLETED present_state.s_ERASE_CYCLE_DELAY present_state.s_ERASE_CYCLE present_state.s_ERASE_CHIP present_state.s_ERASE_SECTOR present_state.s_CHECK_WRITE_COMPLETE present_state.s_WAIT_UNTIL_WRITTEN present_state.s_WRITE_CYCLE_DELAY present_state.s_WRITE_CYCLE present_state.s_CHECK_MEMORY_CONTENTS present_state.s_READ_BEFORE_WRITE present_state.s_READ present_state.s_WAIT_COMMAND 
+present_state.s_WAIT_COMMAND 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+present_state.s_READ 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+present_state.s_READ_BEFORE_WRITE 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+present_state.s_CHECK_MEMORY_CONTENTS 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+present_state.s_WRITE_CYCLE 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+present_state.s_WRITE_CYCLE_DELAY 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+present_state.s_WAIT_UNTIL_WRITTEN 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+present_state.s_CHECK_WRITE_COMPLETE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+present_state.s_ERASE_SECTOR 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+present_state.s_ERASE_CHIP 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+present_state.s_ERASE_CYCLE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+present_state.s_ERASE_CYCLE_DELAY 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+present_state.s_ERASE_WAIT_COMPLETED 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.s_CHECK_ERASE_DONE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.s_ACKNOWLEDGE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_AV_Config:av_config|s_serial_transfer
+Name s_serial_transfer.STATE_6_POST_READ s_serial_transfer.STATE_5_READ_TRANSFER s_serial_transfer.STATE_4_PRE_READ s_serial_transfer.STATE_3_POST_WRITE s_serial_transfer.STATE_2_WRITE_TRANSFER s_serial_transfer.STATE_1_PRE_WRITE s_serial_transfer.STATE_0_IDLE 
+s_serial_transfer.STATE_0_IDLE 0 0 0 0 0 0 0 
+s_serial_transfer.STATE_1_PRE_WRITE 0 0 0 0 0 1 1 
+s_serial_transfer.STATE_2_WRITE_TRANSFER 0 0 0 0 1 0 1 
+s_serial_transfer.STATE_3_POST_WRITE 0 0 0 1 0 0 1 
+s_serial_transfer.STATE_4_PRE_READ 0 0 1 0 0 0 1 
+s_serial_transfer.STATE_5_READ_TRANSFER 0 1 0 0 0 0 1 
+s_serial_transfer.STATE_6_POST_READ 1 0 0 0 0 0 1 
+
+State Machine - |NIOS|nios_system:U0|nios_system_AV_Config:av_config|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol
+Name s_serial_protocol.STATE_5_STOP_BIT s_serial_protocol.STATE_4_TRANSFER s_serial_protocol.STATE_3_START_BIT s_serial_protocol.STATE_2_RESTART_BIT s_serial_protocol.STATE_1_INITIALIZE s_serial_protocol.STATE_0_IDLE 
+s_serial_protocol.STATE_0_IDLE 0 0 0 0 0 0 
+s_serial_protocol.STATE_1_INITIALIZE 0 0 0 0 1 1 
+s_serial_protocol.STATE_2_RESTART_BIT 0 0 0 1 0 1 
+s_serial_protocol.STATE_3_START_BIT 0 0 1 0 0 1 
+s_serial_protocol.STATE_4_TRANSFER 0 1 0 0 0 1 
+s_serial_protocol.STATE_5_STOP_BIT 1 0 0 0 0 1 

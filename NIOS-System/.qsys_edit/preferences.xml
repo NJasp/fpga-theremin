@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="95" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="182" />
+   <name preferredWidth="235" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project" />
+ <window width="1938" height="1050" x="-9" y="-9" />
+ <generation
+   path="D:/intelFPGA_lite/16.1/component_tutorial/embedded_system/"
+   synthesis="VHDL" />
+</preferences>
