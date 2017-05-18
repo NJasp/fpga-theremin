@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element cam_detect_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element video_bayer_resampler_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element video_decoder_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="EP4CE115F29C7" />
+ <parameter name="deviceFamily" value="Cyclone IV E" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName">DE2_115_Media_Computer.qpf</parameter>
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="camera_slave"
+   internal="cam_detect_0.camera_slave"
+   type="avalon"
+   dir="end" />
+ <interface name="camera_xdata" internal="cam_detect_0.xData" />
+ <interface name="camera_ydata" internal="cam_detect_0.yData" />
+ <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="video_ext"
+   internal="video_decoder_0.external_interface"
+   type="conduit"
+   dir="end" />
+ <module name="cam_detect_0" kind="cam_detect" version="1.0" enabled="1" />
+ <module name="clk_0" kind="clock_source" version="16.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="video_bayer_resampler_0"
+   kind="altera_up_avalon_video_bayer_resampler"
+   version="16.1"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="custom_height_in" value="1944" />
+  <parameter name="custom_width_in" value="2592" />
+  <parameter name="device">5MP daughtercard (THDB_D5M)</parameter>
+  <parameter name="use_custom_format" value="true" />
+ </module>
+ <module
+   name="video_decoder_0"
+   kind="altera_up_avalon_video_decoder"
+   version="16.1"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="video_source">5MP Daughtercard (THDB_D5M)</parameter>
+ </module>
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="video_bayer_resampler_0.avalon_bayer_source"
+   end="cam_detect_0.avalon_streaming_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="video_decoder_0.avalon_decoder_source"
+   end="video_bayer_resampler_0.avalon_bayer_sink" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_0.clk"
+   end="video_decoder_0.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_0.clk"
+   end="video_bayer_resampler_0.clk" />
+ <connection kind="clock" version="16.1" start="clk_0.clk" end="cam_detect_0.clk" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_0.clk_reset"
+   end="video_decoder_0.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_0.clk_reset"
+   end="video_bayer_resampler_0.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_0.clk_reset"
+   end="cam_detect_0.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>
