@@ -15,6 +15,8 @@ architecture Behaviour of cam_detect is
 begin
 	-- Info: video_bayer_resampler_0: Change in Resolution: 640 x 480 -> 320 x 240
 	process (clk, reset) 
+	
+		
 		variable rData, gData, bData : unsigned(7 downto 0);
 		variable blackCounter : integer;
 		variable xCount, yCount : integer;
@@ -53,7 +55,7 @@ begin
 						
 						-- if 10 or more have been found send through positions of this row
 						if blackCounter >= 10 then
-							xyData <= std_logic_vector(to_unsigned(xCount, 16))&std_logic_vector(to_unsigned(yCount, 16));
+							--xyData <= std_logic_vector(to_unsigned(xCount, 16))&std_logic_vector(to_unsigned(yCount, 16));
 							blackCounter := 0;
 						end if;
 					end if;
@@ -61,5 +63,5 @@ begin
 			end if;
 	end process;
 	
-	--xyData <= "11111110111111011111111011111111";
+	xyData <= "00000000" & data;
 end architecture Behaviour;

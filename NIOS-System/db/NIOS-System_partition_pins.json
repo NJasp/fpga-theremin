@@ -864,19 +864,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "D5M_PIXLCLK",
-					"strict" : false
-				},
-				{
 					"name" : "AUD_ADCDAT",
 					"strict" : false
 				},
 				{
 					"name" : "KEY[0]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_RESET_N",
 					"strict" : false
 				},
 				{
@@ -888,51 +880,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "D5M_FVAL",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_LVAL",
-					"strict" : false
-				},
-				{
 					"name" : "SW[8]",
 					"strict" : false
 				},
 				{
 					"name" : "SW[16]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[7]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[6]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[5]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[4]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[8]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[9]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[10]",
-					"strict" : false
-				},
-				{
-					"name" : "D5M_D[11]",
 					"strict" : false
 				},
 				{

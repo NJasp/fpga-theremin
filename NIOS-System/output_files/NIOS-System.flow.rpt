@@ -1,5 +1,5 @@
 Flow report for NIOS-System
-Thu May 18 09:57:28 2017
+Thu May 18 13:05:36 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu May 18 09:56:19 2017       ;
+; Flow Status                        ; Successful - Thu May 18 13:04:38 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; NIOS-System                                 ;
 ; Top-level Entity Name              ; NIOS                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 20,458 / 114,480 ( 18 % )                   ;
-;     Total combinational functions  ; 18,193 / 114,480 ( 16 % )                   ;
-;     Dedicated logic registers      ; 12,314 / 114,480 ( 11 % )                   ;
-; Total registers                    ; 12433                                       ;
-; Total pins                         ; 242 / 529 ( 46 % )                          ;
+; Total logic elements               ; 20,110 / 114,480 ( 18 % )                   ;
+;     Total combinational functions  ; 17,877 / 114,480 ( 16 % )                   ;
+;     Dedicated logic registers      ; 12,157 / 114,480 ( 11 % )                   ;
+; Total registers                    ; 12276                                       ;
+; Total pins                         ; 226 / 529 ( 43 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 65,890 / 3,981,312 ( 2 % )                  ;
+; Total memory bits                  ; 65,634 / 3,981,312 ( 2 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 14 / 532 ( 3 % )                            ;
 ; Total PLLs                         ; 2 / 4 ( 50 % )                              ;
 +------------------------------------+---------------------------------------------+
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/18/2017 09:33:42 ;
+; Start date & time ; 05/18/2017 12:44:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; NIOS-System         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+------------------------+------------+
 ; Assignment Name                     ; Value                                                                                                                                                    ; Default Value ; Entity Name            ; Section Id ;
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176646857719504.149509281803760                                                                                                                          ; --            ; --                     ; --         ;
+; COMPILER_SIGNATURE_ID               ; 176646857719504.149510428706760                                                                                                                          ; --            ; --                     ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                       ; --            ; --                     ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                        ; --            ; --                     ; --         ;
 ; MISC_FILE                           ; ../component_tutorial/embedded_system/synthesis/../nios_system.cmp                                                                                       ; --            ; --                     ; --         ;
@@ -103,11 +103,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:12:02     ; 1.0                     ; 1211 MB             ; 00:08:07                           ;
-; Fitter                    ; 00:08:38     ; 1.1                     ; 1831 MB             ; 00:07:17                           ;
-; Assembler                 ; 00:00:33     ; 1.0                     ; 651 MB              ; 00:00:18                           ;
-; TimeQuest Timing Analyzer ; 00:01:05     ; 1.2                     ; 939 MB              ; 00:00:42                           ;
-; Total                     ; 00:22:18     ; --                      ; --                  ; 00:16:24                           ;
+; Analysis & Synthesis      ; 00:10:27     ; 1.0                     ; 1195 MB             ; 00:07:20                           ;
+; Fitter                    ; 00:07:30     ; 1.1                     ; 1832 MB             ; 00:06:31                           ;
+; Assembler                 ; 00:00:29     ; 1.0                     ; 645 MB              ; 00:00:17                           ;
+; TimeQuest Timing Analyzer ; 00:00:52     ; 1.3                     ; 938 MB              ; 00:00:37                           ;
+; Total                     ; 00:19:18     ; --                      ; --                  ; 00:14:45                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
