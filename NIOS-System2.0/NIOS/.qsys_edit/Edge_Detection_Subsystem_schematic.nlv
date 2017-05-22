@@ -1,0 +1,26 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Edge_Detection_Subsystem.Chroma_Filter -pg 1 -lvl 3 -y 150
+preplace inst Edge_Detection_Subsystem.Chroma_Upsampler -pg 1 -lvl 5 -y 190
+preplace inst Edge_Detection_Subsystem.Video_Stream_Splitter -pg 1 -lvl 2 -y 130
+preplace inst Edge_Detection_Subsystem.Edge_Detection -pg 1 -lvl 4 -y 150
+preplace inst Edge_Detection_Subsystem.Edge_Detection_Router_Controller -pg 1 -lvl 2 -y 30
+preplace inst Edge_Detection_Subsystem -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Edge_Detection_Subsystem.Sys_Clk -pg 1 -lvl 1 -y 70
+preplace inst Edge_Detection_Subsystem.Video_Stream_Merger -pg 1 -lvl 6 -y 230
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(MASTER)Video_Stream_Splitter.avalon_sync_source,(SLAVE)Video_Stream_Merger.avalon_sync_sink) 1 2 4 NJ 280 NJ 280 NJ 280 N
+preplace netloc EXPORT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Edge_Detection_Router_Controller.s1,(SLAVE)Edge_Detection_Subsystem.edge_detection_control_slave) 1 0 2 NJ 60 NJ
+preplace netloc EXPORT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Sys_Clk.clk_in_reset,(SLAVE)Edge_Detection_Subsystem.sys_reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Edge_Detection.reset,(SLAVE)Video_Stream_Splitter.reset,(MASTER)Sys_Clk.clk_reset,(SLAVE)Video_Stream_Merger.reset,(SLAVE)Edge_Detection_Router_Controller.reset,(SLAVE)Chroma_Filter.reset,(SLAVE)Chroma_Upsampler.reset) 1 1 5 410 260 890 260 1150 260 1430 320 N
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(MASTER)Edge_Detection.avalon_edge_detection_source,(SLAVE)Chroma_Upsampler.avalon_chroma_sink) 1 4 1 1410
+preplace netloc FAN_OUT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Video_Stream_Splitter.clk,(SLAVE)Chroma_Upsampler.clk,(SLAVE)Chroma_Filter.clk,(SLAVE)Edge_Detection.clk,(SLAVE)Edge_Detection_Router_Controller.clk,(SLAVE)Video_Stream_Merger.clk,(MASTER)Sys_Clk.clk) 1 1 5 390 240 870 240 1130 240 1410 300 N
+preplace netloc EXPORT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Edge_Detection_Subsystem.sys_clk,(SLAVE)Sys_Clk.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Edge_Detection_Subsystem.video_stream_sink,(SLAVE)Video_Stream_Splitter.avalon_stream_router_sink) 1 0 2 NJ 140 NJ
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Chroma_Filter.avalon_chroma_sink,(MASTER)Video_Stream_Splitter.avalon_stream_router_source_1) 1 2 1 N
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(MASTER)Chroma_Filter.avalon_chroma_source,(SLAVE)Edge_Detection.avalon_edge_detection_sink) 1 3 1 1110
+preplace netloc EXPORT<net_container>Edge_Detection_Subsystem</net_container>(MASTER)Edge_Detection_Subsystem.video_stream_source,(MASTER)Video_Stream_Merger.avalon_stream_router_source) 1 6 1 N
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(SLAVE)Video_Stream_Splitter.external_interface,(SLAVE)Edge_Detection_Router_Controller.external_connection) 1 1 1 450
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(MASTER)Video_Stream_Splitter.avalon_stream_router_source_0,(SLAVE)Video_Stream_Merger.avalon_stream_router_sink_0) 1 2 4 NJ 140 NJ 140 NJ 140 1670
+preplace netloc POINT_TO_POINT<net_container>Edge_Detection_Subsystem</net_container>(MASTER)Chroma_Upsampler.avalon_chroma_source,(SLAVE)Video_Stream_Merger.avalon_stream_router_sink_1) 1 5 1 1650
+levelinfo -pg 1 0 180 2160
+levelinfo -hier Edge_Detection_Subsystem 190 220 480 920 1180 1460 1700 2010

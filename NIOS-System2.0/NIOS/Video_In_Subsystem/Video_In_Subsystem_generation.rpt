@@ -1,0 +1,180 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\NIOS-System2.0\NIOS\nios_system2.qsys --block-symbol-file --output-directory=D:\NIOS-System2.0\NIOS\Video_In_Subsystem --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading NIOS/nios_system2.qsys
+Progress: Reading input file
+Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 16.1]
+Progress: Parameterizing module AV_Config
+Progress: Adding Audio [altera_up_avalon_audio 16.1]
+Progress: Parameterizing module Audio
+Progress: Adding Audio_pll [altera_up_avalon_audio_pll 16.1]
+Progress: Parameterizing module Audio_pll
+Progress: Adding Camera [Video_In_Subsystem 1.0]
+Progress: Reading input file
+Progress: Adding D5M_Camera_0 [D5M_Camera 1.0]
+Progress: Parameterizing module D5M_Camera_0
+Progress: Adding Sys_Clk [clock_source 16.1]
+Progress: Parameterizing module Sys_Clk
+Progress: Adding Video_In [altera_up_avalon_video_decoder 16.1]
+Progress: Parameterizing module Video_In
+Progress: Adding Video_In_Bayer_Resampler [altera_up_avalon_video_bayer_resampler 16.1]
+Progress: Parameterizing module Video_In_Bayer_Resampler
+Progress: Adding Video_In_Clipper [altera_up_avalon_video_clipper 16.1]
+Progress: Parameterizing module Video_In_Clipper
+Progress: Adding Video_In_RGB_Resampler [altera_up_avalon_video_rgb_resampler 16.1]
+Progress: Parameterizing module Video_In_RGB_Resampler
+Progress: Adding Video_In_Scaler [altera_up_avalon_video_scaler 16.1]
+Progress: Parameterizing module Video_In_Scaler
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module Camera
+Progress: Adding Flash [Altera_UP_Flash_Memory_IP_Core_Avalon_Interface 16.1]
+Progress: Parameterizing module Flash
+Progress: Adding GPIO [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module GPIO
+Progress: Adding Green_Leds [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Green_Leds
+Progress: Adding Interval_timer [altera_avalon_timer 16.1]
+Progress: Parameterizing module Interval_timer
+Progress: Adding JTAG_Processor1 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module JTAG_Processor1
+Progress: Adding JTAG_Processor2 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module JTAG_Processor2
+Progress: Adding JTAG_to_FPGA [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module JTAG_to_FPGA
+Progress: Adding Processor1 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module Processor1
+Progress: Adding Processor2 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module Processor2
+Progress: Adding Processor_1_floating_point [altera_nios_custom_instr_floating_point 16.1]
+Progress: Parameterizing module Processor_1_floating_point
+Progress: Adding Processor_2_floating_point [altera_nios_custom_instr_floating_point 16.1]
+Progress: Parameterizing module Processor_2_floating_point
+Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Pushbuttons
+Progress: Adding Red_Leds [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Red_Leds
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module SDRAM
+Progress: Adding SRAM [altera_up_avalon_sram 16.1]
+Progress: Parameterizing module SRAM
+Progress: Adding Switches [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Switches
+Progress: Adding SysID [altera_avalon_sysid_qsys 16.1]
+Progress: Parameterizing module SysID
+Progress: Adding Sys_clk [clock_source 16.1]
+Progress: Parameterizing module Sys_clk
+Progress: Adding UART [altera_up_avalon_rs232 16.1]
+Progress: Parameterizing module UART
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system2.Camera.Video_In: Video In Stream: Format: 2592 x 1944 (default) with Colour: 8 (bits) x 1 (planes) (RGB Bayer Pattern)
+Info: nios_system2.Camera.Video_In_Bayer_Resampler: Change in Resolution: 2592 x 1944 -> 1296 x 972
+Info: nios_system2.Camera.Video_In_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info: nios_system2.Camera.Video_In_RGB_Resampler: RGB Resampling: 8 (bits) x 1 (planes) -> 8 (bits) x 3 (planes)
+Info: nios_system2.Camera.Video_In_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info: nios_system2.Camera.Video_In_Bayer_Resampler.avalon_bayer_source/Video_In_RGB_Resampler.avalon_rgb_sink: The source data signal is 24 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: nios_system2.Camera.Video_In_RGB_Resampler.avalon_rgb_source/Video_In_Clipper.avalon_clipper_sink: The source data signal is 24 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: nios_system2.Camera.Video_In_Scaler.avalon_scaler_source/D5M_Camera_0.avalon_streaming_sink: The source has a ready signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: nios_system2.Camera.Video_In_Scaler.avalon_scaler_source/D5M_Camera_0.avalon_streaming_sink: The source data signal is 8 bits, but the sink is 24 bits. Avalon-ST Adapter will be inserted.
+Info: nios_system2.JTAG_Processor1: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_system2.JTAG_Processor2: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_system2.SDRAM: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: nios_system2.SysID: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios_system2.SysID: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\NIOS-System2.0\NIOS\nios_system2.qsys --synthesis=VHDL --output-directory=D:\NIOS-System2.0\NIOS\Video_In_Subsystem\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading NIOS/nios_system2.qsys
+Progress: Reading input file
+Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 16.1]
+Progress: Parameterizing module AV_Config
+Progress: Adding Audio [altera_up_avalon_audio 16.1]
+Progress: Parameterizing module Audio
+Progress: Adding Audio_pll [altera_up_avalon_audio_pll 16.1]
+Progress: Parameterizing module Audio_pll
+Progress: Adding Camera [Video_In_Subsystem 1.0]
+Progress: Parameterizing module Camera
+Progress: Adding Flash [Altera_UP_Flash_Memory_IP_Core_Avalon_Interface 16.1]
+Progress: Parameterizing module Flash
+Progress: Adding GPIO [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module GPIO
+Progress: Adding Green_Leds [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Green_Leds
+Progress: Adding Interval_timer [altera_avalon_timer 16.1]
+Progress: Parameterizing module Interval_timer
+Progress: Adding JTAG_Processor1 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module JTAG_Processor1
+Progress: Adding JTAG_Processor2 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module JTAG_Processor2
+Progress: Adding JTAG_to_FPGA [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module JTAG_to_FPGA
+Progress: Adding Processor1 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module Processor1
+Progress: Adding Processor2 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module Processor2
+Progress: Adding Processor_1_floating_point [altera_nios_custom_instr_floating_point 16.1]
+Progress: Parameterizing module Processor_1_floating_point
+Progress: Adding Processor_2_floating_point [altera_nios_custom_instr_floating_point 16.1]
+Progress: Parameterizing module Processor_2_floating_point
+Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Pushbuttons
+Progress: Adding Red_Leds [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Red_Leds
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module SDRAM
+Progress: Adding SRAM [altera_up_avalon_sram 16.1]
+Progress: Parameterizing module SRAM
+Progress: Adding Switches [altera_up_avalon_parallel_port 16.1]
+Progress: Parameterizing module Switches
+Progress: Adding SysID [altera_avalon_sysid_qsys 16.1]
+Progress: Parameterizing module SysID
+Progress: Adding Sys_clk [clock_source 16.1]
+Progress: Parameterizing module Sys_clk
+Progress: Adding UART [altera_up_avalon_rs232 16.1]
+Progress: Parameterizing module UART
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system2.Camera.Video_In: Video In Stream: Format: 2592 x 1944 (default) with Colour: 8 (bits) x 1 (planes) (RGB Bayer Pattern)
+Info: nios_system2.Camera.Video_In_Bayer_Resampler: Change in Resolution: 2592 x 1944 -> 1296 x 972
+Info: nios_system2.Camera.Video_In_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info: nios_system2.Camera.Video_In_RGB_Resampler: RGB Resampling: 8 (bits) x 1 (planes) -> 8 (bits) x 3 (planes)
+Info: nios_system2.Camera.Video_In_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info: nios_system2.Camera.Video_In_Bayer_Resampler.avalon_bayer_source/Video_In_RGB_Resampler.avalon_rgb_sink: The source data signal is 24 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: nios_system2.Camera.Video_In_RGB_Resampler.avalon_rgb_source/Video_In_Clipper.avalon_clipper_sink: The source data signal is 24 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: nios_system2.Camera.Video_In_Scaler.avalon_scaler_source/D5M_Camera_0.avalon_streaming_sink: The source has a ready signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: nios_system2.Camera.Video_In_Scaler.avalon_scaler_source/D5M_Camera_0.avalon_streaming_sink: The source data signal is 8 bits, but the sink is 24 bits. Avalon-ST Adapter will be inserted.
+Info: nios_system2.JTAG_Processor1: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_system2.JTAG_Processor2: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_system2.SDRAM: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: nios_system2.SysID: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios_system2.SysID: Time stamp will be automatically updated when this component is generated.
+Info: nios_system2: Generating nios_system2 "nios_system2" for QUARTUS_SYNTH
+Warning: nios_system2: "No matching role found for Processor1_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Warning: nios_system2: "No matching role found for Processor1_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: nios_system2: "No matching role found for Processor1_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Warning: nios_system2: "No matching role found for Processor2_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Warning: nios_system2: "No matching role found for Processor2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: nios_system2: "No matching role found for Processor2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info: AV_Config: Starting Generation of Audio and Video Config
+Info: AV_Config: "nios_system2" instantiated altera_up_avalon_audio_and_video_config "AV_Config"
+Info: Audio: Starting Generation of Audio Controller
+Info: Audio: "nios_system2" instantiated altera_up_avalon_audio "Audio"
+Info: Audio_pll: "nios_system2" instantiated altera_up_avalon_audio_pll "Audio_pll"
+Info: avalon_st_adapter: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_001: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_002: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_0
+Error: avalon_st_adapter_002.data_format_adapter_0: The output interface has no empty signal, but this adapter has been configured to adapt a narrow input interface  symbols per beat(1) to a wide output interface symbols per beat(3).
+Info: Camera: "nios_system2" instantiated Video_In_Subsystem "Camera"
+Error: Generation stopped, 44 or more modules remaining
+Info: nios_system2: Done "nios_system2" with 38 modules, 24 files
+Error: qsys-generate failed with exit code 1: 2 Errors, 6 Warnings
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,13 @@
+	component Video_In_Subsystem is
+		port (
+			sys_clk_clk              : in  std_logic                     := 'X';             -- clk
+			sys_reset_reset_n        : in  std_logic                     := 'X';             -- reset_n
+			video_in_PIXEL_CLK       : in  std_logic                     := 'X';             -- PIXEL_CLK
+			video_in_LINE_VALID      : in  std_logic                     := 'X';             -- LINE_VALID
+			video_in_FRAME_VALID     : in  std_logic                     := 'X';             -- FRAME_VALID
+			video_in_pixel_clk_reset : in  std_logic                     := 'X';             -- pixel_clk_reset
+			video_in_PIXEL_DATA      : in  std_logic_vector(11 downto 0) := (others => 'X'); -- PIXEL_DATA
+			camera_slave_readdata    : out std_logic_vector(31 downto 0)                     -- readdata
+		);
+	end component Video_In_Subsystem;
+
