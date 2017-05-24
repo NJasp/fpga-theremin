@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed May 24 11:51:08 2017
+Fitter Status : Successful - Wed May 24 14:27:01 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : DE2_115_CAMERA
 Top-level Entity Name : DE2_115_CAMERA
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 1,837 / 114,480 ( 2 % )
-    Total combinational functions : 1,558 / 114,480 ( 1 % )
-    Dedicated logic registers : 1,138 / 114,480 ( < 1 % )
-Total registers : 1138
+Total logic elements : 1,798 / 114,480 ( 2 % )
+    Total combinational functions : 1,502 / 114,480 ( 1 % )
+    Dedicated logic registers : 1,155 / 114,480 ( 1 % )
+Total registers : 1155
 Total pins : 428 / 529 ( 81 % )
 Total virtual pins : 0
 Total memory bits : 57,400 / 3,981,312 ( 1 % )

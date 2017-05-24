@@ -13,51 +13,38 @@ end entity cam_detect;
 
 architecture Behaviour of cam_detect is
 begin
-	-- Info: video_bayer_resampler_0: Change in Resolution: 640 x 480 -> 320 x 240
 	process (clk, reset) 
 	
-	variable sred : integer;
-	variable sgreen : integer;
-	variable sblue : integer;	
-	variable sxinput : integer;
-	variable syinput : integer;
+	variable sred, sgreen, sblue, avgcolor : integer;
+	variable found : std_logic;
+	variable sxinput : std_logic_vector(15 downto 0);
+	variable syinput : std_logic_vector(15 downto 0);
 	variable xysend : std_logic_vector(31 downto 0);	
-	--variable higherx : integer;
-	--variable highery : integer;
-	variable lowestavg : integer;
-	variable avgcolor : integer;
+
 			begin	
 			if reset ='0' then
-				sred := 0;
-				sgreen := 0;
-				sblue := 0;
-				--higherx := 0;
-				--highery := 0;
-				--lowestavg := 5000;
-				--avgcolor := 5000;
+				sxinput := "0000000110010000";
+				syinput := "0000000100101100";
+				avgcolor := 0;
+				found := '0';
 			elsif rising_edge(clk) then
 				if xyvalid = '1' then
-					sxinput := to_integer(unsigned(xinput));
-					syinput := to_integer(unsigned(yinput));
+					if(yinput = "0000000000000000") then
+						found := '0';
+					end if;
+					sxinput := xinput;
+					syinput := yinput;
 				end if;
 				if rgbvalid = '1' then
 					sred := to_integer(unsigned(Red));
 					sgreen := to_integer(unsigned(Green));
 					sblue := to_integer(unsigned(Blue));
-					avgcolor := (sred+sgreen+sblue)/3;
+					avgcolor := ((sred+sgreen+sblue)/3);
 				end if;
---				if sxinput > higherx then
---					higherx := sxinput;
---					xysend(31 downto 16) := std_logic_vector(to_unsigned(sxinput,16));
---				end if;
---				if syinput > highery then
---					highery := syinput;
---					xysend(15 downto 0) := std_logic_vector(to_unsigned(syinput,16));
---				end if;
-				if avgcolor < lowestavg then
-					lowestavg := avgcolor;
-					xysend(31 downto 0) := std_logic_vector(to_unsigned(avgcolor,32));
-				end if;			
+				if(avgcolor > 255 and found = '0') then
+					xysend := sxinput & syinput;
+					found := '1';
+				end if;
 			end if;
 			xyData <= xysend;
 	end process;
